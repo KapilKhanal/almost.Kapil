@@ -118,17 +118,47 @@
   </url>
   
   <url>
+    <loc>/tags/data-cleaning/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/dplyr/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/ggplot2/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/python/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/statistics/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/waterquality/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/lake_data/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/information-games/</loc>
     <lastmod>2017-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/post/police-data-challenge/</loc>
-    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/python/</loc>
     <lastmod>2017-07-23T21:13:14-05:00</lastmod>
   </url>
   

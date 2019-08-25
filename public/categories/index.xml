@@ -21,9 +21,25 @@
     </item>
     
     <item>
+      <title>dplyr</title>
+      <link>/categories/dplyr/</link>
+      <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
+      <guid>/categories/dplyr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>/categories/ggplot2/</link>
+      <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
+      <guid>/categories/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>/categories/python/</link>
-      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
       <guid>/categories/python/</guid>
       <description></description>
     </item>
