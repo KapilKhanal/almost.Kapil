@@ -14,6 +14,5 @@ author = "admin"
 
 +++
 # About me
-Hello, Welcome to my blog. I write about Data , Code and Mathematics. I am a extremely grateful soul for everything. I am the first one to go to college from both side of my parents family. 
-I study Mathematics, Data Science. 
+Hello, Glad you found this blog. I write about Data,Code and Mathematics. Email me, Coffee or Ice Cream on Me ! Let's nerd out with data and machine learning systems.
 
