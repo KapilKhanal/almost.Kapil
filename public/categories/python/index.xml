@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python | Transponster</title>
+    <link>/categories/python/</link>
+      <atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>Python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Sun, 23 Jul 2017 21:13:14 -0500</lastBuildDate>
+    <image>
+      <url>/img/aph-salt-spring-zoom.jpg</url>
+      <title>Python</title>
+      <link>/categories/python/</link>
+    </image>
+    
+    <item>
+      <title>Secretory Problem</title>
+      <link>/post/police-data-challenge/</link>
+      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <guid>/post/police-data-challenge/</guid>
+      <description>
+
+
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R Markdown&lt;/h2&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When you click the &lt;strong&gt;Knit&lt;/strong&gt; button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Including Plots&lt;/h2&gt;
+&lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Police-Data-Challenge_files/figure-html/pressure-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Note that the &lt;code&gt;echo = FALSE&lt;/code&gt; parameter was added to the code chunk to prevent printing of the R code that generated the plot.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Secretory Problem</title>
+      <link>/post/secretoryproblem/</link>
+      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <guid>/post/secretoryproblem/</guid>
+      <description>
+
+
+&lt;div id=&#34;when-to-give-up-exploration-vs-exploitation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;B&gt;When to give up? Exploration vs Exploitation&lt;/B&gt;&lt;/h2&gt;
+&lt;p&gt;A lot of hard working students don’t end up being selected for the scholarships. I should know because i lost 3 years doing it.&lt;/p&gt;
+&lt;p&gt;Now i turn into a information theoretic game to find when should i have quit the whole process.&lt;/p&gt;
+&lt;p&gt;Assumption: Your best score will get you scholarship if you are one of the sufficiently prepared student.&lt;/p&gt;
+&lt;p&gt;Say, entrance exams are the games. We all agree they do behave as a game. If a student is well prepared as indicated by practice questions and exams, then getting their name in scholarship in list is basically a game of chance. This is not to say that it is not possible but given that we all have time and money constrains in our life, when is the right amount to quit. Thus, A player in this game is a sufficiently prepared, hard working student. for others, before playing this game one has to be efficiently prepared.&lt;/p&gt;
+&lt;p&gt;Now that we agree, getting your name on that list is a work of chance. Say, that you are prepared to give entrance exams 10 times but that will come at a cost of time and money. Out of 10 exams you give, say all these exams can be ranked from your best score to worst score , thus you can rank them from 1 to 10. We can agree on one thing that your best possible score has the highest chance of getting scholarship[which may not be necessarily true for all but our player is a smart, hardworking , well prepared one.].&lt;/p&gt;
+&lt;p&gt;Now, we give exams one by one and the score one get is random after some cutoff[for me it was 90]. We can all relate to the “fact” that some questions are actually random and they determine our fate.&lt;/p&gt;
+&lt;p&gt;So we don’t know which exam’s is gonna be the best score for us. so its ideal to assume that it is random. After we give each exams, we surely can rank which one was the best exams and which one was the worst.&lt;/p&gt;
+&lt;p&gt;The optimal solution is to give n/e exams before deciding to quit and quit after the n/e exams if the score on n/e + 1 is not better than the exams before.&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;def quit_candidate(n):
+    &amp;#39;&amp;#39;&amp;#39;Choose a exam to quit after.. from a list of n exam using 
+    the optimal strategy. 1= best time to quit,n is worst time to quit&amp;#39;&amp;#39;&amp;#39;
+
+    exams = np.arange(1, n+1)
+    np.random.shuffle(exams)
+    
+    stop = int(round(n/np.e)) 
+    best_from_rejected = np.min(exams[:stop])
+    rest = exams[stop:]
+    
+    try:
+        return rest[rest &amp;lt; best_from_rejected][0]
+    except IndexError:
+        return exams[-1]
+#Now let&amp;#39;s see if it actually holds..by having  100,000 student give 100 exams
+
+sim = np.array([quit_candidate(n=100) for i in range(100000)])
+
+plt.figure(figsize=(10, 6))
+plt.hist(sim, bins=100)
+plt.xticks(np.arange(0, 101, 10))
+plt.ylim(0, 40000)
+plt.xlabel(&amp;#39;Chosen candidate&amp;#39;)
+plt.ylabel(&amp;#39;frequency&amp;#39;)
+plt.show()&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://imrankhan17.github.io/pages/figs/secretary/fig1.png&#34; alt=&#34;img&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;img&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;We see most of the time we ended up quiting on the prime time[rank 1 is the prime time to quit]&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;best_candidate = []
+for r in range(5, 101, 5):
+    sim = np.array([quit_candidate(n=100, reject=r) for i in range(100000)])
+    # np.histogram counts frequency of each candidate
+    best_candidate.append(np.histogram(sim, bins=100)[0][0]/100000)
+
+plt.figure(figsize=(10, 6))
+plt.scatter(range(5, 101, 5), best_candidate)
+plt.xlim(0, 100)
+plt.xticks(np.arange(0, 101, 10))
+plt.ylim(0, 0.4)
+plt.xlabel(&amp;#39;% of candidates rejected&amp;#39;)
+plt.ylabel(&amp;#39;Probability of choosing best candidate&amp;#39;)
+plt.grid(True)
+plt.axvline(100/np.e, ls=&amp;#39;--&amp;#39;, c=&amp;#39;black&amp;#39;)
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://imrankhan17.github.io/pages/figs/secretary/fig3.png&#34; alt=&#34;img&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;img&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Hence , if we decide to quit on the optimal time to quit is try giving 37% exams and quit if the score is lower than the lower score you got before.&lt;/p&gt;
+&lt;p&gt;so i was ready to give 8 exams and my score were [84,87,88,94,90,92]&lt;/p&gt;
+&lt;p&gt;37% of 8 = 3.&lt;/p&gt;
+&lt;p&gt;My score was improving after 3rd exam so i guess i was right to keep giving exams but the 5th exam my score went down i guess i should have quit then instead of giving one more exam. I lost another 3 month preparing for that.&lt;/p&gt;
+&lt;p&gt;:-by Kapil Khanal&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

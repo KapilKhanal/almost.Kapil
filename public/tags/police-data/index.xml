@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Police Data | Transponster</title>
+    <link>/tags/police-data/</link>
+      <atom:link href="/tags/police-data/index.xml" rel="self" type="application/rss+xml" />
+    <description>Police Data</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Sun, 23 Jul 2017 21:13:14 -0500</lastBuildDate>
+    <image>
+      <url>/img/aph-salt-spring-zoom.jpg</url>
+      <title>Police Data</title>
+      <link>/tags/police-data/</link>
+    </image>
+    
+    <item>
+      <title>Police Data Challenge</title>
+      <link>/post/police-data-challenge/</link>
+      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <guid>/post/police-data-challenge/</guid>
+      <description>
+
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;http://thisisstatistics.org/wp-content/uploads/2017/09/ASA_PDC_opt1_1140x350-1140x350.jpg&#34; alt=&#34;Police Data Challenge&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Police Data Challenge&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;police-data-challenge&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;font color=green&gt;&lt;strong&gt;Police Data Challenge&lt;/strong&gt;&lt;/font&gt;&lt;/h1&gt;
+&lt;p&gt;As data collection and analysis become critical tools for policing, law enforcement agencies aren’t just working case by case. Police forces are working with statisticians in crime analyst roles to identify big-picture patterns in the numbers that are as critical as any other clue in the fight to keep communities safe. Together, they are encouraging joint problem solving, innovation, enhanced understanding, and accountability between communities and the law enforcement agencies that serve them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Using data available through the &lt;font color = red&gt;&lt;em&gt;Police Data Initiative&lt;/em&gt;&lt;/font&gt;, we had to analyze complex data sets from the &lt;font color = red&gt;Baltimore, Cincinnati and &lt;strong&gt;Seattle&lt;/strong&gt; Police Departments&lt;/font&gt;, and also recommend innovative solutions to enhance public safety. Although not required, teams may identify and utilize external data sets.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;How Does the Contest Work?&lt;/strong&gt;
+Teams of 2-5 high school or college undergrad students in the U.S. and Canada can submit an entry. Each team must complete the declaration of intent form by 11:59 PM on Friday, Oct. 20 and must submit their presentation by 11:59 PM EDT on Friday, Nov. 3 to be eligible. Submissions will require a short essay describing the team’s process and presenting their analysis and recommendations via a PowerPoint presentation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Awards will be given in three categories (1) &lt;strong&gt;&lt;font color = green&gt;Best Overall Analysis&lt;/strong&gt;&lt;/font&gt;,&lt;font color = purple&gt;(&lt;em&gt;Spoiler Alert&lt;/em&gt;)&lt;/font&gt; (2) Best Visualization, and (3) Best Use of External Data.
+&lt;strong&gt;——————————————————————————————————————–&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This was also a Midterm Project for our &amp;lt;font,color=magenta&amp;gt;&lt;strong&gt;Data Visualization Class&lt;/strong&gt;&lt;/font&gt; taught by &amp;lt;font,color=green&amp;gt;&lt;a href=&#34;http://driftlessdata.space&#34;&gt;&lt;strong&gt;Prof.Silas Bergen&lt;/strong&gt;&lt;/a&gt;&lt;/font&gt;. We would like to thank him for this huge midterm project(&lt;em&gt;maybe the first time i am thankful for giving us a huge project and pushing us to think creative and practical&lt;/em&gt;) and ofcourse his creativity and innovative thinking&lt;/p&gt;
+&lt;p&gt;My team,&lt;font color= purple&gt;&lt;strong&gt;Jimmy Hickey&lt;/strong&gt;,&lt;strong&gt;Luke Peacock&lt;/strong&gt;,&lt;em&gt;and me&lt;/em&gt; &lt;strong&gt;Kapil Khanal&lt;/strong&gt;&lt;/font&gt; representing &lt;font color=purple&gt;&lt;strong&gt;WINONA STATE UNIVERSITY&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;I would definetly like to thank &lt;em&gt;StackOverflow&lt;/em&gt;,&lt;em&gt;Pandas Documentation&lt;/em&gt;,&lt;em&gt;DataQuest&lt;/em&gt;,&lt;em&gt;tab completion in Jupyter notebook&lt;/em&gt; for code snippets and tutorials and &lt;strong&gt;F&lt;font color=red&gt;.&lt;/font&gt;R&lt;font color=magenta&gt;.&lt;/font&gt;I&lt;font color=purple&gt;.&lt;/font&gt;E&lt;font color=blue&gt;.&lt;/font&gt;N&lt;font color=green&gt;.&lt;/font&gt;D&lt;font color=violet&gt;.&lt;/font&gt;S&lt;/strong&gt; for being there for me during computation time&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lets-dive-in.&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Let’s dive in….&lt;/h1&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;#Import Everythng that is necessary
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime
+import matplotlib.dates as mdates
+import seaborn as sns&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;#Had to name like this... dsci_midterm.csv..LOL....Any WSU data science student knows the mess..in their machine.
+#CSV,CSV everywhere !!
+crime_data = pd.read_csv(&amp;quot;dsci_midterm.csv&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;/anaconda/lib/python3.6/site-packages/IPython/core/interactiveshell.py:2728: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  interactivity=interactivity, compiler=compiler, result=result)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;#Let&amp;#39;s peek at the data
+crime_data.head(5)&lt;/code&gt;&lt;/pre&gt;
+&lt;div&gt;
+&lt;style scoped&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&#34;1&#34; class=&#34;dataframe&#34;&gt;
+&lt;thead&gt;
+&lt;tr style=&#34;text-align: right;&#34;&gt;
+&lt;th&gt;
+&lt;/th&gt;
+&lt;th&gt;
+CAD CDW ID
+&lt;/th&gt;
+&lt;th&gt;
+CAD Event Number
+&lt;/th&gt;
+&lt;th&gt;
+General Offense Number
+&lt;/th&gt;
+&lt;th&gt;
+Event Clearance Code
+&lt;/th&gt;
+&lt;th&gt;
+Event Clearance Description
+&lt;/th&gt;
+&lt;th&gt;
+Event Clearance SubGroup
+&lt;/th&gt;
+&lt;th&gt;
+Event Clearance Group
+&lt;/th&gt;
+&lt;th&gt;
+Event Clearance Date
+&lt;/th&gt;
+&lt;th&gt;
+Hundred Block Location
+&lt;/th&gt;
+&lt;th&gt;
+District/Sector
+&lt;/th&gt;
+&lt;th&gt;
+Zone/Beat
+&lt;/th&gt;
+&lt;th&gt;
+Census Tract
+&lt;/th&gt;
+&lt;th&gt;
+Longitude
+&lt;/th&gt;
+&lt;th&gt;
+Latitude
+&lt;/th&gt;
+&lt;th&gt;
+Incident Location
+&lt;/th&gt;
+&lt;th&gt;
+Initial Type Description
+&lt;/th&gt;
+&lt;th&gt;
+Initial Type Subgroup
+&lt;/th&gt;
+&lt;th&gt;
+Initial Type Group
+&lt;/th&gt;
+&lt;th&gt;
+At Scene Time
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;
+0
+&lt;/th&gt;
+&lt;td&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
