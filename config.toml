@@ -1,4 +1,4 @@
-baseurl = "https://kapil.rbind.io/"
+baseurl = "https://almostkapil.netlify.com//"
 title = "Transponster"
 copyright = "&copy; 2018 Kapil Khanal"
 theme = "hugo-academic"
@@ -21,10 +21,10 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Kapil Khanal"
-  description = "A site about R"
-  role = "Associate Professor, Assistant Director of the Center for Spoken Language Understanding"
-  organization = "Oregon Health & Science University (OHSU)"
-  organization_url = "http://www.ohsu.edu/xd/"
+  description = "My journey as a Data Scientist"
+  role = "Student, Peer Tutor and Tech Help Desk"
+  organization = "Winona State University"
+  organization_url = ""
   avatar = "aph-salt-spring-zoom.jpg"
   email = "kkhanal16@winona.edu"
   address = ""
