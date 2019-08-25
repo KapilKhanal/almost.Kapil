@@ -5,3 +5,5 @@ date: 2017-07-23T21:13:14-05:00
 categories: ["Python"]
 tags: ["Applied Statistics", "Probability", "Information Games"]
 ---
+Please visit here for code and data 
+https://github.com/KapilKhanal/Police-Data-Challenge
