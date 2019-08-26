@@ -567,13 +567,10 @@ plt.show()
       <description>
 
 
-&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;Inspection Paradox&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;static/img/sajha.png&#34; alt=&#34;Sajha&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Sajha&lt;/p&gt;
-&lt;/div&gt;
+&lt;div id=&#34;average-for-group-vs-individual&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Average for group vs Individual&lt;/h1&gt;
+&lt;p&gt;&lt;B&gt;Inspection Paradox&lt;/B&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/InspectionParadox_files/sajha.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Buses and trains are supposed to arrive at constant intervals, but in practice some intervals are longer than others. This means the buses do not follow schedule exactly. There is always some randomness..With your luck, you might think you are more likely to arrive during a long interval. It turns out you are right: a random arrival is more likely to fall in a long interval because, well, it’s longer..!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Let’s think of a scenario…&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Suppose a Bus service in your city says they pass a station every 10 minutes. This means you will assume that when you go to station randomly you would think that the average time is 5 minutes but more often you will be waiting longer than five minutes actually 10 minutes on average.&lt;/p&gt;

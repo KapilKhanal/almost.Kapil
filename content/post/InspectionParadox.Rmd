@@ -10,11 +10,11 @@ tags: ["Applied Statistics", "Probability", "paradoxes"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R Markdown
+# Average for group vs Individual
+<B>Inspection Paradox</B>
 
-Inspection Paradox
+![](/post/InspectionParadox_files/sajha.png)
 
-![Sajha](static/img/sajha.png)
 
 Buses and trains are supposed to arrive at constant intervals, but in practice some intervals are longer than others. This means the buses do not follow schedule exactly. There is always some randomness..With your luck, you might think you are more likely to arrive during a long interval. It turns out you are right: a random arrival is more likely to fall in a long interval because, well, it’s longer..!
 
