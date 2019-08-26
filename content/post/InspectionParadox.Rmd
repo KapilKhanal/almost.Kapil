@@ -1,7 +1,7 @@
 ---
 title: "Why do you have to wait more for the buses?"
 author: "Kapil Khanal"
-date: 2018-07-23T21:13:14-05:00
+date: 2017-07-23T21:13:14-05:00
 categories: ["R"]
 tags: ["Applied Statistics", "Probability", "paradoxes"]
 ---
@@ -14,15 +14,21 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 Inspection Paradox
 
+![Sajha](static/img/sajha.png)
+
 Buses and trains are supposed to arrive at constant intervals, but in practice some intervals are longer than others. This means the buses do not follow schedule exactly. There is always some randomness..With your luck, you might think you are more likely to arrive during a long interval. It turns out you are right: a random arrival is more likely to fall in a long interval because, well, it’s longer..!
 
 *Let's think of a scenario...*
 
-Suppose a Bus service in your city says they pass a station every 10 minutes. This means you will assume that when you go to station randomly you would think that the average time is 5 minutes but
+Suppose a Bus service in your city says they pass a station every 10 minutes. This means you will assume that when you go to station randomly you would think that the average time is 5 minutes but more often you will be waiting longer than five minutes actually 10 minutes on average.
+
+Another example of this paradoxes is: Most of the school report there average class size. But if you, as a student that average is not accurate. Say, there are 4 classes of size 75,13,12,10. Then, the average colleges will report is $(75 + 13 +12 +10)/4  = 27.5$  but you as a prospective student, the average is different. 
+
+You are more likely to be in room with 75 students $((75*75) + (13*13)+(12*12)+(10*10))/110 = 54.89$. Hence, the average reporting is not for you. This kind of paradoxes happen everywhere.
 
 
+To generalize it in a more abstract way,
 
-
-This is one case where the perspective of the individual and the group differs. For example, when you are waiting for the bus, there is high chance that you will be waiting longer than the average and also there will be time when you are right on time  
+This is one case where the perspective of the individual and the group differs.For group, the average is what happens but as a individual the average will not make any sense.
 
 

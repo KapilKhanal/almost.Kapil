@@ -148,9 +148,9 @@ defaultContentLanguageInSubdir = false
     link = "https://impactstory.org/u/0000-0002-8082-1890"
     
   [[params.social]]
-    icon = "orcid"
+    icon = "tableau"
     icon_pack = "ai"
-    link = "http://orcid.org/0000-0002-8082-1890"
+    link = "https://public.tableau.com/profile/kapil.khanal#!/"
     
   [[params.social]]
     icon = "researchgate"

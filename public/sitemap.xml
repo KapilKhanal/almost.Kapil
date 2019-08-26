@@ -73,41 +73,6 @@
   </url>
   
   <url>
-    <loc>/tags/applied-statistics/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/paradoxes/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/probability/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/inspectionparadox/</loc>
-    <lastmod>2018-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/privacy/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
@@ -115,6 +80,11 @@
   <url>
     <loc>/terms/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -129,6 +99,11 @@
   
   <url>
     <loc>/categories/ggplot2/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
     <lastmod>2018-06-23T21:13:14-05:00</lastmod>
   </url>
   
@@ -153,7 +128,17 @@
   </url>
   
   <url>
+    <loc>/tags/applied-statistics/</loc>
+    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/information-games/</loc>
+    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/paradoxes/</loc>
     <lastmod>2017-07-23T21:13:14-05:00</lastmod>
   </url>
   
@@ -163,7 +148,22 @@
   </url>
   
   <url>
+    <loc>/tags/probability/</loc>
+    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/secretoryproblem/</loc>
+    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/inspectionparadox/</loc>
     <lastmod>2017-07-23T21:13:14-05:00</lastmod>
   </url>
   

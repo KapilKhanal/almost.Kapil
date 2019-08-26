@@ -20,14 +20,139 @@
       <description>
 
 
+&lt;p&gt;Link of the Competition the data is of : &lt;a href=&#34;http://minneanalytics.org/minnemudac-2016/data/&#34; class=&#34;uri&#34;&gt;http://minneanalytics.org/minnemudac-2016/data/&lt;/a&gt;
+Our Submission as a freshmen :
+MINNEMUDAC:2016
+Water Quality Analytics Competiton:
+A blog on Data Analytics Competition that we recently participated . We were Ranked 5th out of 19th team that participated from regional universities of Midwest USA
+This is the Analysis Report of a Analytics Competition that i participated in Minnesota on Nov 4 and Nov 5 in Eden Praire, Optum Technologies. This Competition was Organized by Minneanalytics[biggest analytics Group in Minneapolis], MUDAC[ Yearly analytics event of Winonat State University] and Social Data Science[a Data Science for Social Good Platform based in Minneapolis]
+A Glimpse of the Event and our Report.&lt;/p&gt;
+&lt;p&gt;Sweet Smile After We Flopped our First Presentation[We gave five presentation.There were 88 judges and they were Water Expert, Data Scientists, Policy Makers]:&lt;/p&gt;
+&lt;p&gt;Introduction of my Wondeful Team Members:
+Kapil Khanal
+Freshmen
+Data Science Major
+Data entrepreneurship enthusiastic
+Melek Hakim
+Senior
+Computer Science Major with Data Science Minor
+Linh Leo Nguyen
+Sophomore
+Computer Science Major
+Rene Stiller&lt;/p&gt;
+&lt;p&gt;Senior
+Communication Arts and Literature Education Major with Math Education Minor
+[The Savior of our Presentation.]&lt;/p&gt;
+&lt;p&gt;[Crunching Number with members of my Team at Midnight before the Presentation day. ]&lt;/p&gt;
+&lt;p&gt;Table of Contents
+1. Overview
+Importance of Water Quality
+This year is called the Year of Water Action. Governor Mark Dayton[Governor of Minnesota,2016] has begun an initiative aimed at “urging businesses, the agricultural industry, outdoor enthusiasts, communities and families to take action to conserve and improve water quality.”
+We are members of the Minnesota community and understand the importance of being informed about our state’s resources. Governor Dayton is dedicated to finding solutions for the conditions of the Minnesota lakes where at this time, 40% of Minnesota’s waters are considered to be polluted.
+Problem Statement
+To get a Understanding of how water lake Quality in Minnesota has been Performing. It is Also to understand how other Social data like property value, agriculture or Residents have Affected to water quality or vice versa&lt;/p&gt;
+&lt;p&gt;Objective and Scope of the Project
+Minnesota Water Quality and its impact in the Community. These Following Questions have been put Forwarded by the Minnesota Water Activists and Water Departments.&lt;/p&gt;
+&lt;p&gt;Main Questions:&lt;/p&gt;
+&lt;p&gt;a)How does property value influence water quality?&lt;/p&gt;
+&lt;p&gt;b)What property characteristics influence water quality the most?&lt;/p&gt;
+&lt;p&gt;c)Have changes in land use or land development over time positively or adversely impacted water quality?&lt;/p&gt;
+&lt;p&gt;d)What lakes tend to have the best / worst water quality?&lt;/p&gt;
+&lt;p&gt;e)Are the lakes with the best / worst water quality consistent over time?
+Data Sources
+&lt;a href=&#34;http://minneanalytics.org/minnemudac/data/&#34; class=&#34;uri&#34;&gt;http://minneanalytics.org/minnemudac/data/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tools and Techniques
+Our Team Used Tableau, JMP and R for Data Cleaning, Data Exploration,Visualization and Model Development.&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Data Description and Preparation
+Classification of variables of Data
+A. Numerical
+Phosphorus
+Sechhi Depth&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;B. Categorical
+Grade[Primary Interests]
+Physical Condition
+Recreational Suitability&lt;/p&gt;
+&lt;p&gt;Data Questions&lt;/p&gt;
+&lt;p&gt;Questions: Property Data Set&lt;/p&gt;
+&lt;p&gt;Property ownership is an investment and the hope is that your investment will gain value over time. What locations have seen the most substantial increase / decrease in property values over time?
+The type of dwelling or type of property owner (i.e. public, commercial, residual, etc.) may adversely impact water quality. What locations have seen the most change or growth in these characteristics over time?
+Local and county governments are often responsible for developing policies and regulating land development. What locations have seen the most change in land development over time? What variations exist in how land is being developed across various local and county governments?&lt;/p&gt;
+&lt;p&gt;Questions: Property Data Set&lt;/p&gt;
+&lt;p&gt;Property that is contiguous to a lake, i.e. lake front property, is likely to influence its value. What is the relationship between proximity to water and property value? What effect does location have on this relationship? Does time influence this relationship?
+What relationships exist between various property characteristics (i.e. dwelling type, ownership type, etc.) and proximity to water? Have these relationships changed over time? Do the policies / regulations of local or county governments appear to influence these relationships?
+Does proximity to water appear to influence how land is being developed over time? Does the amount of influence vary across local or county governments?
+Data Quality
+The data Was really huge for a 4GB memory Laptop. It was really a Messy Data, as we were expecting it to be. It was as Messy as the Water quality itself.&lt;/p&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Exploratory Data Analysis
+Corelation of Phosphorus and Sechhi Depth on other Categorical Data
+Histogram &amp;amp; Box Plots
+Histogram of
+Scatterplot of Numerical Data
+Seasonality Analysis of Categorical Variable
+over the Time for Each Lake was Visualized.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;How the Data was Prepared:&lt;/p&gt;
+&lt;p&gt;The data was prepared with the guidance of our faculty supervisors. Our Laptops obviously was unable to process the exorbitant size of the data. To solve this, we took out lake with insufficient data and null values and focused on the data that was sufficie and we asked our Supervisors to clean the data in their Powerful Computers of our department. Our area of focus was the parcels approximately 350 meters from the lake shore.We use Jmp to subset the data and make the Summary table of the data we wanted.&lt;/p&gt;
+&lt;p&gt;Findings
+Evaluation metric:
+Parameter of Success:
+Lake Ranking, Causation of water Pollution
+The Metric we used for Phosphorus level&lt;/p&gt;
+&lt;p&gt;This was determined by the lakes’ high grades, high secci score, and low phosphorus levels. There was a strong correlation between levels of phosphorus and the grade and secci Scores.
+Model Development:
+We used Random Forest to model the data and sort the variable of Most importance:&lt;/p&gt;
+&lt;p&gt;Best Four Lakes
+Worst Four Lakes&lt;/p&gt;
+&lt;p&gt;Little Carnelian Lake
+Shields Lake
+Square Lake
+Kramer Lake
+Jane lake
+Bay Lake
+Halfbred Lake
+Swede lake&lt;/p&gt;
+&lt;p&gt;Below is the Ranking of Lakes Based on the Phosphorus level and a Snap shot of Our Best Performing Little Carnellion Lake.&lt;/p&gt;
+&lt;p&gt;The rapid fluctuation in Secchi depth is shown by the bar graph in last plot of above picture.
+It Shows lakes are More Clearer right before Summer . They have Increased Transparency at that time but after Summer Exposure, they immediately become less Clearer.Our understanding of the Algal Growth is&lt;/p&gt;
+&lt;p&gt;This is a high error rate(?).This suggest why our box plot goes up immediately. So,it is natural to see a pattern of fluctuation in sechhi depth but we can see that the fluctuation sometimes becomes abnormal than expected. Sometimes there is sustained increase in the height of box plot as in above picture This means lake was Clear. Lets have a look at the above histograms and Bar graph. Whenever there is decrease in phosphorus level, there is increase in Height of secchi depth. This Suggest there must be Somekind of Corelationin phosphorus an d Secchi depth.&lt;/p&gt;
+&lt;p&gt;The lower the phosphorus level, the higher the grade. This is not a perfect correlation, but strong enough that we conclude that phosphorus is the main component to determine a body of water’s quality. Four of these top performing lakes are in the same watersheds, called the Lower St. Croix River Watershed. This leads us to believe that phosphorus and secci levels are consistent between the lakes in the watershed. indicating Eutrophication.This Makes Sense because phosphorus is the nutrient that most influences the growth of algae in lakes. Excess algae in lake water can cause a disturbance to the normal equilibrium of the aquatic ecosystem. As algae plants die and decompose, bacteria consume oxygen that is dissolved in the water. Increased algal growth can lead to a decline in oxygen levels, accelerating the decline of water quality/ declining water clarity, and decreasing transparency.
+Here is a visualization of the water quality of lakes in Minneapolis, Minnesota. The Red spots and the orange Spots are the Spots to worry.
+.&lt;/p&gt;
+&lt;p&gt;Elements of land use and land development that impact water quality
+The value of a property adjacent to lakes, bays, and rivers reflects the overall quality of the water and area resources.Below is the Visualization of the Agricultural Preserve land nearby the lakes. Clearly ,we can see more land in sub urban area of Minneapolis are Preserved for Agriculture.And those are the Region where Eutrophication is Common and the lakes with Stimulated Plant Growth occurs.
+Possible Hypothesis for this Causation is
+Excessive amount of Fertilizers in Agricultural land or improper management of Runoff Water. Contrary to the common belief that lake quality being degraded by the residential area nearby it, we found that agricultural land is more Hazardious than Residential area.
+And Everytime we Cross Checked the Location of Bad Lakes, we Always found a Golf Course Naerby to it.
+Are Golf Course detrimental to health of lakes? Yes, we Found it is most Affecting man made structure that is affecting the lake quality.&lt;/p&gt;
+&lt;p&gt;The amount that people are willing to pay for the properties is shown in the market value of the houses and lands. As the quality of the water improves,it is expected that people will pay more to live by the clean, transparent lake but our analysis on data Revealed Something not obvious.&lt;/p&gt;
+&lt;p&gt;The Above Box plot Shows that the Median EMV is Approximately Same for both Eutrophic andn uncontaminated lake but the Lake with slighlty stimulated plant growth has higher EMV. So based on this , we Recommend customers to opt for home by Uncontaminated lake than by plant growth Stimulated.We Found that People are Paying high price even for the Contaminated lake than uncontaminated. They are paying most for the lake that are Stimulated for algal Growth.&lt;/p&gt;
+&lt;p&gt;This is the water quality mapped by EMV. This is a snapshot of the interactive dashboard in tableau showing the change in the EMV by lake by year. We even Categorized the lake by waterquality to see the change going on in each lake in each year.
+Here is the Histogram Plot for the EMV. It Clearly Shows that our Average Priced Home will be Somewhere in that Spike in the Curve. It is 160k for a average price for a House in Minneapolis Metropolitan.&lt;/p&gt;
+&lt;p&gt;So, Do Our Data Suggest us for a average priced house in a Average water quality lake?
+This is the lake that has Above average water quality[Ranked 9th best Lake in our Evaluation metric] and below average price. So, We Suggest you to Consider these area if you are looking for a house that is relatively cheap and near a Good Lake. It is a new oppurtunity for Real Estate agencies to focus on these area.&lt;/p&gt;
+&lt;p&gt;Conclusion and Recommendations
+a)Limit the Golf Course area near to the Lakes.
+b)Develop a policy to limit the use of fertiliser in Agriculture reserve. We need to immediately work on this issue than decreasing the residential area nearby to lake.
+Lets not forget that we analyzed the vast trove of data of few Variables. The Analysis Could Have been Much More Accurate if we have had the Data on the number of different Species Found in the lake. So we Recommend the Water Department to build new infrastructures that measure temperature of water , Species in the lake, And Air pollution around the lake.&lt;/p&gt;
+&lt;p&gt;Thanks to my Wonderful team for collaboration and Professor for Helping this happen !
+For interactive Dashboard of our Report:
+&lt;a href=&#34;https://public.tableau.com/profile/malek.hakim#!/vizhome/PARCELS_Story/WaterQualityVisualizationsintheTwinCities&#34; class=&#34;uri&#34;&gt;https://public.tableau.com/profile/malek.hakim#!/vizhome/PARCELS_Story/WaterQualityVisualizationsintheTwinCities&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Work Cited
+Carpenter, S. R., Caraco, N. F., Correll, D. L., Howarth, R. W., Sharpley, A. N., &amp;amp; Smith, V. H. (1998). Nonpoint pollution of surface waters with phosphorus and nitrogen. Ecological applications, 8(3), 559-568.&lt;/p&gt;
+&lt;p&gt;Office of the Governor and Lt. Governor. (2016, August). A Year of Water Action in Minnesota. Retrieved October 30, 2016, from &lt;a href=&#34;http://www.mn.gov/governor/issues/wateraction/index.jsp&#34; class=&#34;uri&#34;&gt;http://www.mn.gov/governor/issues/wateraction/index.jsp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;RMBEL. (2015, May 11). Property values and lake water quality - RMBEL. Retrieved October 30, 2016, from &lt;a href=&#34;http://rmbel.info/property-values-and-lake-water-quality-2/&#34; class=&#34;uri&#34;&gt;http://rmbel.info/property-values-and-lake-water-quality-2/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Water Transparency - RMBEL. (n.d.). Retrieved October 30, 2016, from &lt;a href=&#34;http://rmbel.info/water-transparenc&#34; class=&#34;uri&#34;&gt;http://rmbel.info/water-transparenc&lt;/a&gt;&lt;/p&gt;
 This project is divided into two parts.
 &lt;li&gt;
-Data Cleaning and Data Management
+Data Cleaning and Data Management&lt;br&gt;
 &lt;li&gt;
 &lt;p&gt;Data Product and Presentation&lt;/p&gt;
 &lt;p&gt;First Part of this project was done in Python. This is the link of the code:
 &lt;a href=&#34;https://github.com/KapilKhanal/DSCI430/blob/master/project_data_khanal.py&#34; class=&#34;uri&#34;&gt;https://github.com/KapilKhanal/DSCI430/blob/master/project_data_khanal.py&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The Data was sponsored by MinneMUDAC as part of the Fall Datt Challenge&lt;/p&gt;
+&lt;p&gt;The Data was sponsored by MinneMUDAC as part of the Fall Data Challenge&lt;/p&gt;
 &lt;p&gt;The second part of the project was focused on the making a usable data product.
 The link of the code: &lt;a href=&#34;https://github.com/KapilKhanal/DSCI430/blob/master/app.R&#34; class=&#34;uri&#34;&gt;https://github.com/KapilKhanal/DSCI430/blob/master/app.R&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Below you can use this product&lt;/em&gt;

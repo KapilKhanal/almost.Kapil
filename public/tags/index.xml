@@ -21,30 +21,6 @@
     </item>
     
     <item>
-      <title>Applied Statistics</title>
-      <link>/tags/applied-statistics/</link>
-      <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
-      <guid>/tags/applied-statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>paradoxes</title>
-      <link>/tags/paradoxes/</link>
-      <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
-      <guid>/tags/paradoxes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Probability</title>
-      <link>/tags/probability/</link>
-      <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
-      <guid>/tags/probability/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Data Cleaning</title>
       <link>/tags/data-cleaning/</link>
       <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
@@ -69,10 +45,34 @@
     </item>
     
     <item>
+      <title>Applied Statistics</title>
+      <link>/tags/applied-statistics/</link>
+      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <guid>/tags/applied-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Information Games</title>
       <link>/tags/information-games/</link>
       <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
       <guid>/tags/information-games/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>paradoxes</title>
+      <link>/tags/paradoxes/</link>
+      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <guid>/tags/paradoxes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probability</title>
+      <link>/tags/probability/</link>
+      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <guid>/tags/probability/</guid>
       <description></description>
     </item>
     

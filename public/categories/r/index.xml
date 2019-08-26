@@ -5,7 +5,7 @@
     <link>/categories/r/</link>
       <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Mon, 23 Jul 2018 21:13:14 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Sun, 23 Jul 2017 21:13:14 -0500</lastBuildDate>
     <image>
       <url>img/aph-salt-spring-zoom.jpg</url>
       <title>R</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Why do you have to wait more for the buses?</title>
       <link>/post/inspectionparadox/</link>
-      <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
+      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
       <guid>/post/inspectionparadox/</guid>
       <description>
 
@@ -23,10 +23,17 @@
 &lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;R Markdown&lt;/h1&gt;
 &lt;p&gt;Inspection Paradox&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;static/img/sajha.png&#34; alt=&#34;Sajha&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Sajha&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;Buses and trains are supposed to arrive at constant intervals, but in practice some intervals are longer than others. This means the buses do not follow schedule exactly. There is always some randomness..With your luck, you might think you are more likely to arrive during a long interval. It turns out you are right: a random arrival is more likely to fall in a long interval because, well, it’s longer..!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Let’s think of a scenario…&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Suppose a Bus service in your city says they pass a station every 10 minutes. This means you will assume that when you go to station randomly you would think that the average time is 5 minutes but&lt;/p&gt;
-&lt;p&gt;This is one case where the perspective of the individual and the group differs. For example, when you are waiting for the bus, there is high chance that you will be waiting longer than the average and also there will be time when you are right on time&lt;/p&gt;
+&lt;p&gt;Suppose a Bus service in your city says they pass a station every 10 minutes. This means you will assume that when you go to station randomly you would think that the average time is 5 minutes but more often you will be waiting longer than five minutes actually 10 minutes on average.&lt;/p&gt;
+&lt;p&gt;Another example of this paradoxes is: Most of the school report there average class size. But if you, as a student that average is not accurate. Say, there are 4 classes of size 75,13,12,10. Then, the average colleges will report is &lt;span class=&#34;math inline&#34;&gt;\((75 + 13 +12 +10)/4 = 27.5\)&lt;/span&gt; but you as a prospective student, the average is different.&lt;/p&gt;
+&lt;p&gt;You are more likely to be in room with 75 students &lt;span class=&#34;math inline&#34;&gt;\(((75*75) + (13*13)+(12*12)+(10*10))/110 = 54.89\)&lt;/span&gt;. Hence, the average reporting is not for you. This kind of paradoxes happen everywhere.&lt;/p&gt;
+&lt;p&gt;To generalize it in a more abstract way,&lt;/p&gt;
+&lt;p&gt;This is one case where the perspective of the individual and the group differs.For group, the average is what happens but as a individual the average will not make any sense.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

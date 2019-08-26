@@ -14,7 +14,7 @@ interests:
 - Scientific Computing and Programming
 - Mathematics
 
-name: Kapil %>% Khanal()
+name: Kapil `%>%` Khanal()
 organizations:
 - name: Winona State University
   url: ""
@@ -30,6 +30,8 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/KapilKhanal
+  
+
 superuser: true
 user_groups:
 - Researchers
