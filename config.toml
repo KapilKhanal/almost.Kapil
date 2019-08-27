@@ -1,4 +1,4 @@
-baseurl = "https://kapil.rbind.io/"
+baseurl = "https://almostkapil.netlify.com/"
 title = "Transponster"
 copyright = "&copy; 2018 Kapil Khanal"
 theme = "hugo-academic"

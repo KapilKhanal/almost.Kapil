@@ -20,8 +20,19 @@
       <description>
 
 
-&lt;p&gt;Please visit here for code and data
+&lt;div id=&#34;police-data-challenge-winner-recommendations&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Police Data Challenge: Winner Recommendations&lt;/h1&gt;
+&lt;p&gt;February 1, 2018&lt;/p&gt;
+&lt;p&gt;The Police Data Challenge contest brought talented high school and undergraduate students across the nation to show their passion for the good statistics can do.&lt;/p&gt;
+&lt;p&gt;With the Police Foundation’s efforts to make the information available, the 70 teams used real crime data sets from Baltimore, Seattle and Cincinnati police departments to analyze the best possible solutions for safer communities.&lt;/p&gt;
+&lt;p&gt;Check out below how the winning teams analyzed the best way to fight crime through statistics:&lt;/p&gt;
+&lt;p&gt;Winona State University, Winona, MN
+Jimmy Hickey, Kapil Khanal, Luke Peacock divided the crimes into more detailed categories than what the Seattle Police Department data provided. They used the crime types and locations to discover that gun related crimes are condensed in specific areas. Their recommendation was to raise public awareness of the times and locations of high crimes and include more police for patrol.&lt;/p&gt;
+&lt;p&gt;Sponsored by: Silas Bergen&lt;/p&gt;
+&lt;p&gt;Link to Presentation: &lt;a href=&#34;https://thisisstatistics.org/wp-content/uploads/2018/01/Best-Overall-College-.pptx&#34; class=&#34;uri&#34;&gt;https://thisisstatistics.org/wp-content/uploads/2018/01/Best-Overall-College-.pptx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please visit here for code
 &lt;a href=&#34;https://github.com/KapilKhanal/Police-Data-Challenge&#34; class=&#34;uri&#34;&gt;https://github.com/KapilKhanal/Police-Data-Challenge&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
