@@ -22,7 +22,7 @@
 
 &lt;div id=&#34;truck-factor&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Truck Factor&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;/post/TruckFactor_files/truckfactor.jpg&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/post/TruckFactor_files/truckfactor.png&#34; /&gt;
 Today I learned an interesting concept in software engineering and project management called “Truck Factor”. The minimum numbers of contributors of a project that needs to be hit by a truck before the project is crippled and unfinished.&lt;/p&gt;
 &lt;p&gt;my first thought was why would you think of such a extreme example.Seems like there is an emphasis on how important some people are to the project.This suggests a need for many heroes than a single hero. Its a good metric to see how centralized your project is in terms of contributions. You would want to many people on the project, helping each other so that if one gets hit by a bus, projects is not in serious trouble.&lt;/p&gt;
 &lt;p&gt;There is a whole science of organizing project called Agile methodology if any one is interested.&lt;/p&gt;
