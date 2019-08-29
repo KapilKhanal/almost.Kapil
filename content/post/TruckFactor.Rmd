@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Truck Factor
-
+![](/post/TruckFactor_files/truckfactor.jpg)
 Today I learned an interesting concept in software engineering and project management called "Truck Factor". The minimum numbers of contributors of a project that needs to be hit by a truck before the project is crippled and unfinished.
 
 my first thought was why would you think of such a extreme example.Seems like there is an emphasis on how important some people are to the project.This suggests a need for many heroes than a single hero. Its a good metric to see how centralized your project is in terms of contributions. You would want to many people on the project, helping each other so that if one gets hit by a bus, projects is not in serious trouble. 
