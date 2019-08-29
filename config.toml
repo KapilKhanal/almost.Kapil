@@ -81,7 +81,7 @@ defaultContentLanguageInSubdir = false
   #   https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = ["r", "yaml"]
-  highlight_style = "atelier-cave-light"
+  highlight_style = "github-gist"
   highlight_version = "9.12.0"
 
   # Enable native social sharing buttons?
@@ -134,7 +134,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/apreshill"
+    link = "//twitter.com/"
 
   
   [[params.social]]
@@ -142,13 +142,10 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//github.com/KapilKhanal"
     
-  [[params.social]]
-    icon = "impactstory"
-    icon_pack = "ai"
-    link = "https://impactstory.org/u/0000-0002-8082-1890"
+  
     
   [[params.social]]
-    icon = "tableau"
+    icon = "impactstory"
     icon_pack = "ai"
     link = "https://public.tableau.com/profile/kapil.khanal#!/"
     

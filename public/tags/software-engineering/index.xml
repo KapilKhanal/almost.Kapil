@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering | Transponster</title>
+    <link>/tags/software-engineering/</link>
+      <atom:link href="/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <description>Software Engineering</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Tue, 23 Jul 2019 21:13:14 -0500</lastBuildDate>
+    <image>
+      <url>/img/aph-salt-spring-zoom.jpg</url>
+      <title>Software Engineering</title>
+      <link>/tags/software-engineering/</link>
+    </image>
+    
+    <item>
+      <title>Truck Factor</title>
+      <link>/post/truckfactor/</link>
+      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      <guid>/post/truckfactor/</guid>
+      <description>
+
+
+&lt;div id=&#34;truck-factor&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Truck Factor&lt;/h2&gt;
+&lt;p&gt;Today I learned an interesting concept in software engineering and project management called “Truck Factor”. The minimum numbers of contributors of a project that needs to be hit by a truck before the project is crippled and unfinished.&lt;/p&gt;
+&lt;p&gt;my first thought was why would you think of such a extreme example.Seems like there is an emphasis on how important some people are to the project.This suggests a need for many heroes than a single hero. Its a good metric to see how centralized your project is in terms of contributions. You would want to many people on the project, helping each other so that if one gets hit by a bus, projects is not in serious trouble.&lt;/p&gt;
+&lt;p&gt;There is a whole science of organizing project called Agile methodology if any one is interested.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
