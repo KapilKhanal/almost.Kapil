@@ -1,0 +1,29 @@
+---
+title: "Testing Alcohol level"
+author: "Kapil Khanal"
+date: 2019-07-23T21:13:14-05:00
+categories: ["R"]
+tags: ["T-test", "Applied statistics", "Data Science"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Is there really 5.4% alcohol in that beer brand?
+
+We all see that a lot of brand publish on their wrapper that the alcohol level is 5.4%. Let's say we collected the percent level of volume for those brand. We sampled randomly and measured the alcohol level ourselves
+
+So we believe that the actual beer percent should be 5.4% but as a beer consumer, we feel sometime it's not. 
+
+if we measure one, and found out that beer has 6.7 we would immediately complain that the brand is telling us lie that there is 5.4% . They may argue that our measuring apparatus or technique is not 100% accurate. There is no way of finding our inaccurate our measurement without measuring it multiple times or taking measurement of multiple beers. It might be the case that our measurement is 100% accurate and the beer has more alcohol than the company is saying. We don't really know. Also, we can't measure every single beer they ever manufactured.
+This is the perfect timing to test this with our statistics sense,
+Below we have a list of measurements from different beer randomly bought, some from midtown, some from walmart.
+Let's do a t-test. 
+```{r}
+level = c(5.1,5.2,6,7,5.01,5.0,6.5,5.6,5.2,6.1,6.2,5.0)
+t.test(level, mu = 5.4)
+```
+The p-value is greater than 0.05 and confidence interval [5.17 to 6.17]. Which means if 100 people have done this random sampling of beer and have calculated the confidence interval , then the mean[5.14] would have always fall in the confidence interval. 
+
+Enough with the statistical jargon? Okay let's enjoy the beer![Cold Beer and Confidence Interval](/post/Beer_files/giphy.gif)

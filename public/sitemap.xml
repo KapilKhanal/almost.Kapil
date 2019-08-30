@@ -33,12 +33,22 @@
   </url>
   
   <url>
+    <loc>/tags/applied-statistics/</loc>
+    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/data-product/</loc>
+    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-science/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
@@ -58,12 +68,27 @@
   </url>
   
   <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/software-engineering/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/t-test/</loc>
+    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/beer/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
@@ -148,11 +173,6 @@
   </url>
   
   <url>
-    <loc>/tags/applied-statistics/</loc>
-    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/information-games/</loc>
     <lastmod>2017-07-23T21:13:14-05:00</lastmod>
   </url>
@@ -169,11 +189,6 @@
   
   <url>
     <loc>/tags/probability/</loc>
-    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
     <lastmod>2017-07-23T21:13:14-05:00</lastmod>
   </url>
   

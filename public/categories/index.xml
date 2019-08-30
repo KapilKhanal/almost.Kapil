@@ -21,6 +21,14 @@
     </item>
     
     <item>
+      <title>R</title>
+      <link>/categories/r/</link>
+      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      <guid>/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>dplyr</title>
       <link>/categories/dplyr/</link>
       <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
@@ -33,14 +41,6 @@
       <link>/categories/ggplot2/</link>
       <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
       <guid>/categories/ggplot2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
-      <guid>/categories/r/</guid>
       <description></description>
     </item>
     

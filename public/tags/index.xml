@@ -13,10 +13,26 @@
     </image>
     
     <item>
+      <title>Applied Statistics</title>
+      <link>/tags/applied-statistics/</link>
+      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      <guid>/tags/applied-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Product</title>
       <link>/tags/data-product/</link>
       <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
       <guid>/tags/data-product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>/tags/data-science/</link>
+      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      <guid>/tags/data-science/</guid>
       <description></description>
     </item>
     
@@ -33,6 +49,14 @@
       <link>/tags/software-engineering/</link>
       <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
       <guid>/tags/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T-test</title>
+      <link>/tags/t-test/</link>
+      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
+      <guid>/tags/t-test/</guid>
       <description></description>
     </item>
     
@@ -65,14 +89,6 @@
       <link>/tags/waterquality/</link>
       <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
       <guid>/tags/waterquality/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Applied Statistics</title>
-      <link>/tags/applied-statistics/</link>
-      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
-      <guid>/tags/applied-statistics/</guid>
       <description></description>
     </item>
     
