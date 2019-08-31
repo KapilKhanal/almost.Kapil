@@ -5,7 +5,7 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Thu, 29 Aug 2019 21:13:14 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Wed, 24 Jul 2019 21:13:14 -0500</lastBuildDate>
     <image>
       <url>/img/aph-salt-spring-zoom.jpg</url>
       <title>Posts</title>
@@ -15,15 +15,19 @@
     <item>
       <title>Sankey diagrams for Bacteria and antibiotics</title>
       <link>/post/sankey/</link>
-      <pubDate>Thu, 29 Aug 2019 21:13:14 -0500</pubDate>
+      <pubDate>Wed, 24 Jul 2019 21:13:14 -0500</pubDate>
       <guid>/post/sankey/</guid>
       <description>
 
 
 &lt;div id=&#34;visually-classifying-bacteria-and-antibiotics&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Visually Classifying Bacteria and Antibiotics&lt;/h2&gt;
-&lt;p&gt;After World War II, antibiotics earned the moniker “wonder drugs” for quickly treating previously-incurable diseases. Data was gathered to determine which drug worked best for each bacterial infection. Comparing drug performance was an enormous aid for practitioners and scientists alike. In the fall of 1951, Will Burtin published a &lt;a href = &#34;https://mbostock.github.io/protovis/ex/antibiotics-burtin.html&#34;&gt;graph &lt;/a&gt; showing the effectiveness of three popular antibiotics on &lt;B&gt;16&lt;/B&gt; different bacteria, measured in terms of minimum inhibitory concentration.
-I am reproducing this &lt;a href = &#34;https://www.dropbox.com/s/68ahri9xnnabce4/Bacteria-sigmoid-howto.docx?dl=0&#34;&gt;wonderful visualization&lt;/a&gt; from my professor(&lt;a href = &#34;http://driftlessdata.space/&#34;&gt; Silas Bergen&lt;/a&gt;.) in ggplot2, who did this in Tableau&lt;/p&gt;
+&lt;p&gt;After World War II, antibiotics earned the moniker “wonder drugs” for quickly treating previously-incurable diseases. Data was gathered to determine which drug worked best for each bacterial infection. Comparing drug performance was an enormous aid for practitioners and scientists alike. In the fall of 1951, Will Burtin published a &lt;a href = &#34;https://mbostock.github.io/protovis/ex/antibiotics-burtin.html&#34;&gt;graph &lt;/a&gt; showing the effectiveness of three popular antibiotics on &lt;B&gt;16&lt;/B&gt; different bacteria, measured in terms of minimum inhibitory concentration.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/post/sankey_files/avb.jpg&#34; alt=&#34;image credit: Ask a biologist&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;image credit: Ask a biologist&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I am reproducing this &lt;a href = &#34;https://www.dropbox.com/s/68ahri9xnnabce4/Bacteria-sigmoid-howto.docx?dl=0&#34;&gt;wonderful visualization&lt;/a&gt; from my professor(&lt;a href = &#34;http://driftlessdata.space/&#34;&gt; Silas Bergen&lt;/a&gt;.) in ggplot2, who did this in Tableau&lt;/p&gt;
 &lt;p&gt;Let’s bring the datasets,&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(knitr)

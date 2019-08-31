@@ -1,7 +1,7 @@
 ---
 title: "Sankey diagrams for Bacteria and antibiotics"
 author: "Kapil Khanal"
-date: 2019-08-29T21:13:14-05:00
+date: 2019-07-24T21:13:14-05:00
 categories: ["R","ggplot2"]
 highlight : true
 highlight_languages : ['R']
@@ -14,7 +14,12 @@ knitr::opts_chunk$set(fig.width=14, fig.height=10)
 ```
 
 ## Visually Classifying Bacteria and Antibiotics
+
+
 After World War II, antibiotics earned the moniker “wonder drugs” for quickly treating previously-incurable diseases. Data was gathered to determine which drug worked best for each bacterial infection. Comparing drug performance was an enormous aid for practitioners and scientists alike. In the fall of 1951, Will Burtin published a <a href = "https://mbostock.github.io/protovis/ex/antibiotics-burtin.html">graph </a> showing the effectiveness of three popular antibiotics on <B>16</B> different bacteria, measured in terms of minimum inhibitory concentration. 
+
+![image credit: Ask a biologist](/post/sankey_files/avb.jpg)
+
 I am reproducing this <a href = "https://www.dropbox.com/s/68ahri9xnnabce4/Bacteria-sigmoid-howto.docx?dl=0">wonderful visualization</a> from my professor(<a href = "http://driftlessdata.space/"> Silas Bergen</a>.)  in ggplot2, who did this in Tableau
 
 Let's bring the datasets,
