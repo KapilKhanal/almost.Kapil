@@ -3,18 +3,21 @@ title: "Sankey diagrams for Bacteria and antibiotics"
 author: "Kapil Khanal"
 date: 2019-08-29T21:13:14-05:00
 categories: ["R","ggplot2"]
+highlight : true
+highlight_languages : ['R']
 tags: ["ggplot2", "Data Visualization", "Data Communication"]
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.width=14, fig.height=10) 
 ```
 
 ## Visually Classifying Bacteria and Antibiotics
 After World War II, antibiotics earned the moniker “wonder drugs” for quickly treating previously-incurable diseases. Data was gathered to determine which drug worked best for each bacterial infection. Comparing drug performance was an enormous aid for practitioners and scientists alike. In the fall of 1951, Will Burtin published a <a href = "https://mbostock.github.io/protovis/ex/antibiotics-burtin.html">graph </a> showing the effectiveness of three popular antibiotics on <B>16</B> different bacteria, measured in terms of minimum inhibitory concentration. 
 Let's bring the datasets,
 
-```{r,echo = FALSE}
+```{r,echo = TRUE,warning=FALSE,message = FALSE}
 library(tidyverse)
 library(knitr)
 library(kableExtra)
@@ -34,4 +37,100 @@ Let's change the format of the data,
 key_value = df %>% gather("Drug","Concentration",Penicillin:Neomycin,-Bacteria)
 kable(head(key_value))
 ```
-okay so, now what we need to do is add a minimum concentration information for each bacteria for each stain type. so basically a column on the gathered table above
+okay so, now what we need to do is add a minimum concentration information for each bacteria for each stain type. so basically a column on the gathered table above. The only thing to keep note of is that here we should group all these bacteria and select the minimum concentration. We could have done this first[basically for eacg ] and gather like above but this is my thought process.  
+```{r}
+df_min<- key_value  %>% 
+  group_by(Bacteria) %>% summarise(Min = min(Concentration))
+kable(head(df_min))
+```
+
+so now, let's join this `df_min` dataframe from above with `df` to have that minimum information in the dataframe.
+
+```{r}
+df<- inner_join(df,df_min,by = "Bacteria")
+df<- df %>% mutate(Best = case_when(
+  Penicillin == Min~ "Penicillin",
+  Neomycin == Min~ "Neomycin",
+  Streptomycin == Min~ "Streptomycin"
+))
+```
+ Now, since the data is ready and in the format we want, 
+```{r}
+kable(head(df))
+```
+ 
+Okay, this step might be a little unintuitive but if we think with `grammer of graphics` philosophy this will make sense. 
+```{r}
+seq1 <- rep(1:16,each=100)
+seq2 <-rep(seq(-6,6,length=100),16)
+newdat <-data.frame(ID=seq1,T=seq2)
+write.csv(newdat,"new_data.csv",row.names=FALSE)
+```
+
+We are making a new dataframe that has data point for the sigmoid curve(you can just draw sigmoid curve in R but this way it is linked with our data with ID)
+```{r}
+#Joining the data by ID
+final_df<-inner_join(df,newdat,by = "ID")
+kable(head(final_df))
+```
+
+```{r}
+#ggplot
+final_df <- final_df %>% mutate(Sigmoid = 1/(1 + exp(-T)))
+```
+
+okay so now we have the final dataset, we can get in the ggplot2 land. 
+
+```{r}
+p <- ggplot(data = final_df , aes(x = T , y = Sigmoid ))
+p + geom_point() 
+#Making best slope
+#Different slop will separate our curves
+final_df<-final_df %>% mutate(bestBacSlope = case_when(
+  Best =="Streptomycin" ~ 4 - ID,
+  Best =="Neomycin" ~ 9 - ID,
+  Best =="Penicillin" ~ 14 - ID
+))
+```
+
+
+```{r}
+final_df<-final_df %>% mutate(curveBest = ID + bestBacSlope * Sigmoid)
+#Figuring out ID and labels
+
+label_df<-final_df %>% dplyr::select(c(ID, Bacteria))%>% group_by(Bacteria,ID) %>% summarise(count = n()) %>% dplyr::select(Bacteria,ID) %>% arrange(ID)
+
+```
+Below are the label we will use in y-axis
+```{r}
+label_y= c("Mycobacterium tuberculosis" ,  "Salmonella schottmuelleri"  ,    
+           "Proteus vulgaris"        ,        "Klebsiella pneumoniae"  ,        
+           "Brucella abortus"      ,          "Pseudomonas aeruginosa"    ,     
+           "Escherichia coli"    ,            "Salmonella (Eberthella) typhosa",
+           "Aerobacter aerogenes"     ,       "Brucella antracis"    ,          
+           "Streptococcus fecalis"    ,       "Staphylococcus aureus"      ,    
+           "Staphylococcus albus"    ,        "Streptococcus hemolyticus"      ,
+           "Streptococcus viridans"    ,      "Diplococcus pneumoniae")
+```
+
+Now it's a `plotting time` !
+
+```{r}
+#Plotting the sigmoid plots
+library(ggthemes)
+sankey <- ggplot(data = final_df, aes(x = T , y = curveBest, color =Gram,size = Min,alpha = 0.9,group = Bacteria)) + geom_line() +scale_fill_manual(values=c("green","red")) + 
+    scale_y_continuous(breaks = seq(1:16) , labels = label_y)   + theme(axis.title.y = element_blank() , axis.line.x  = element_blank() , axis.ticks.x = element_blank(), axis.title.x =element_blank() , axis.text.x.bottom = element_blank() ) + 
+  annotate("text", x = 6, y = 14, label = "Penicillin") +
+  annotate("text", x = 6, y = 9, label = "Neomycin") +
+  annotate("text", x = 6, y = 4, label = "Streptomycin") +
+  annotate("text",x = 5.5,y = 15,label = "Best Antibiotics" ,size = 5, colour = 'blue')+
+  theme_minimal()
+
+ 
+```
+
+
+```{r sankey, fig.cap = "Classification of Bacteria" }
+sankey
+```
+
