@@ -41,7 +41,7 @@ t.test(level, mu = 5.4)&lt;/code&gt;&lt;/pre&gt;
 ## sample estimates:
 ## mean of x 
 ##  5.659167&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The p-value is greater than 0.05 and confidence interval [5.17 to 6.17]. Which means if 100 people have done this random sampling of beer and have calculated the confidence interval , then the mean[5.14] would have always fall in the confidence interval.&lt;/p&gt;
+&lt;p&gt;The p-value is greater than 0.05 and confidence interval [5.17 to 6.17]. Which means if 100 people have done this random sampling of beer and have calculated the confidence interval , then the mean[5.4] would have always fall in the confidence interval.&lt;/p&gt;
 &lt;p&gt;Enough with the statistical jargon? Okay let’s enjoy the beer&lt;img src=&#34;/post/Beer_files/giphy.gif&#34; alt=&#34;Cold Beer and Confidence Interval&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>

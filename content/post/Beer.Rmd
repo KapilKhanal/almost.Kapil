@@ -24,6 +24,6 @@ Let's do a t-test.
 level = c(5.1,5.2,6,7,5.01,5.0,6.5,5.6,5.2,6.1,6.2,5.0)
 t.test(level, mu = 5.4)
 ```
-The p-value is greater than 0.05 and confidence interval [5.17 to 6.17]. Which means if 100 people have done this random sampling of beer and have calculated the confidence interval , then the mean[5.14] would have always fall in the confidence interval. 
+The p-value is greater than 0.05 and confidence interval [5.17 to 6.17]. Which means if 100 people have done this random sampling of beer and have calculated the confidence interval , then the mean[5.4] would have always fall in the confidence interval. 
 
 Enough with the statistical jargon? Okay let's enjoy the beer![Cold Beer and Confidence Interval](/post/Beer_files/giphy.gif)

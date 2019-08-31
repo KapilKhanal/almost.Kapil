@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R | Transponster</title>
-    <link>/categories/r/</link>
-      <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
-    <description>R</description>
+    <title>Data Visualization | Transponster</title>
+    <link>/tags/data-visualization/</link>
+      <atom:link href="/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data Visualization</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Thu, 29 Aug 2019 21:13:14 -0500</lastBuildDate>
     <image>
       <url>/img/aph-salt-spring-zoom.jpg</url>
-      <title>R</title>
-      <link>/categories/r/</link>
+      <title>Data Visualization</title>
+      <link>/tags/data-visualization/</link>
     </image>
     
     <item>
@@ -524,64 +524,6 @@ Penicillin
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;okay so, now what we need to do is add a minimum concentration information for each bacteria for each stain type. so basically a column on the gathered table above&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Testing Alcohol level</title>
-      <link>/post/beer/</link>
-      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
-      <guid>/post/beer/</guid>
-      <description>
-
-
-&lt;div id=&#34;is-there-really-5.4-alcohol-in-that-beer-brand&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Is there really 5.4% alcohol in that beer brand?&lt;/h2&gt;
-&lt;p&gt;We all see that a lot of brand publish on their wrapper that the alcohol level is 5.4%. Let’s say we collected the percent level of volume for those brand. We sampled randomly and measured the alcohol level ourselves&lt;/p&gt;
-&lt;p&gt;So we believe that the actual beer percent should be 5.4% but as a beer consumer, we feel sometime it’s not.&lt;/p&gt;
-&lt;p&gt;if we measure one, and found out that beer has 6.7 we would immediately complain that the brand is telling us lie that there is 5.4% . They may argue that our measuring apparatus or technique is not 100% accurate. There is no way of finding our inaccurate our measurement without measuring it multiple times or taking measurement of multiple beers. It might be the case that our measurement is 100% accurate and the beer has more alcohol than the company is saying. We don’t really know. Also, we can’t measure every single beer they ever manufactured.
-This is the perfect timing to test this with our statistics sense,
-Below we have a list of measurements from different beer randomly bought, some from midtown, some from walmart.
-Let’s do a t-test.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;level = c(5.1,5.2,6,7,5.01,5.0,6.5,5.6,5.2,6.1,6.2,5.0)
-t.test(level, mu = 5.4)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-##  One Sample t-test
-## 
-## data:  level
-## t = 1.3139, df = 11, p-value = 0.2156
-## alternative hypothesis: true mean is not equal to 5.4
-## 95 percent confidence interval:
-##  5.225010 6.093323
-## sample estimates:
-## mean of x 
-##  5.659167&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The p-value is greater than 0.05 and confidence interval [5.17 to 6.17]. Which means if 100 people have done this random sampling of beer and have calculated the confidence interval , then the mean[5.4] would have always fall in the confidence interval.&lt;/p&gt;
-&lt;p&gt;Enough with the statistical jargon? Okay let’s enjoy the beer&lt;img src=&#34;/post/Beer_files/giphy.gif&#34; alt=&#34;Cold Beer and Confidence Interval&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why do you have to wait more for the buses?</title>
-      <link>/post/inspectionparadox/</link>
-      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
-      <guid>/post/inspectionparadox/</guid>
-      <description>
-
-
-&lt;div id=&#34;average-for-group-vs-individual&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Average for group vs Individual&lt;/h1&gt;
-&lt;p&gt;&lt;B&gt;Inspection Paradox&lt;/B&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/post/InspectionParadox_files/sajha.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Buses and trains are supposed to arrive at constant intervals, but in practice some intervals are longer than others. This means the buses do not follow schedule exactly. There is always some randomness..With your luck, you might think you are more likely to arrive during a long interval. It turns out you are right: a random arrival is more likely to fall in a long interval because, well, it’s longer..!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Let’s think of a scenario…&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Suppose a Bus service in your city says they pass a station every 10 minutes. This means you will assume that when you go to station randomly you would think that the average time is 5 minutes but more often you will be waiting longer than five minutes actually 10 minutes on average.&lt;/p&gt;
-&lt;p&gt;Another example of this paradoxes is: Most of the school report there average class size. But if you, as a student that average is not accurate. Say, there are 4 classes of size 75,13,12,10. Then, the average colleges will report is &lt;span class=&#34;math inline&#34;&gt;\((75 + 13 +12 +10)/4 = 27.5\)&lt;/span&gt; but you as a prospective student, the average is different.&lt;/p&gt;
-&lt;p&gt;You are more likely to be in room with 75 students &lt;span class=&#34;math inline&#34;&gt;\(((75*75) + (13*13)+(12*12)+(10*10))/110 = 54.89\)&lt;/span&gt;. Hence, the average reporting is not for you. This kind of paradoxes happen everywhere.&lt;/p&gt;
-&lt;p&gt;To generalize it in a more abstract way,&lt;/p&gt;
-&lt;p&gt;This is one case where the perspective of the individual and the group differs.For group, the average is what happens but as a individual the average will not make any sense.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

@@ -1,0 +1,37 @@
+---
+title: "Sankey diagrams for Bacteria and antibiotics"
+author: "Kapil Khanal"
+date: 2019-08-29T21:13:14-05:00
+categories: ["R","ggplot2"]
+tags: ["ggplot2", "Data Visualization", "Data Communication"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Visually Classifying Bacteria and Antibiotics
+After World War II, antibiotics earned the moniker “wonder drugs” for quickly treating previously-incurable diseases. Data was gathered to determine which drug worked best for each bacterial infection. Comparing drug performance was an enormous aid for practitioners and scientists alike. In the fall of 1951, Will Burtin published a <a href = "https://mbostock.github.io/protovis/ex/antibiotics-burtin.html">graph </a> showing the effectiveness of three popular antibiotics on <B>16</B> different bacteria, measured in terms of minimum inhibitory concentration. 
+Let's bring the datasets,
+
+```{r,echo = FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+df <- read.csv("https://cdn.rawgit.com/plotly/datasets/5360f5cd/Antibiotics.csv", stringsAsFactors = F)
+#String as Factors is a demon. Better not bring it here ! We rarely need that beast.
+#There are 16 bacteria so giving them ID to reference later..
+df<-df %>% mutate(ID =seq(1:16) )
+```
+```{r}
+kable(head(df,n = 16))
+```
+Before proceeding further with the data manipulation we need to think about the format of the visualization. Here we will be making our visualization on the bacteria level, that means we will have information for each bacteria, their gram stain , and the concentration of drug required .
+
+If you look at the table above, we do have all the data we need but not on the format we are thinking. We want one information per row for each bacteria unlike above where each row has all the information of each bacteria on one single row. 
+Let's change the format of the data, 
+```{r}
+key_value = df %>% gather("Drug","Concentration",Penicillin:Neomycin,-Bacteria)
+kable(head(key_value))
+```
+okay so, now what we need to do is add a minimum concentration information for each bacteria for each stain type. so basically a column on the gathered table above

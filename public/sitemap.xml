@@ -33,12 +33,52 @@
   </url>
   
   <url>
-    <loc>/tags/applied-statistics/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/tags/data-communication/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-visualization/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/ggplot2/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ggplot2/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/sankey/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-08-29T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/applied-statistics/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
@@ -53,11 +93,6 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/project-management/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
@@ -68,22 +103,12 @@
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/software-engineering/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/t-test/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
@@ -149,11 +174,6 @@
   
   <url>
     <loc>/categories/dplyr/</loc>
-    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/ggplot2/</loc>
     <lastmod>2018-06-23T21:13:14-05:00</lastmod>
   </url>
   
