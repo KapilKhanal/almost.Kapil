@@ -23,7 +23,7 @@
 &lt;div id=&#34;visually-classifying-bacteria-and-antibiotics&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Visually Classifying Bacteria and Antibiotics&lt;/h2&gt;
 &lt;p&gt;After World War II, antibiotics earned the moniker “wonder drugs” for quickly treating previously-incurable diseases. Data was gathered to determine which drug worked best for each bacterial infection. Comparing drug performance was an enormous aid for practitioners and scientists alike. In the fall of 1951, Will Burtin published a &lt;a href = &#34;https://mbostock.github.io/protovis/ex/antibiotics-burtin.html&#34;&gt;graph &lt;/a&gt; showing the effectiveness of three popular antibiotics on &lt;B&gt;16&lt;/B&gt; different bacteria, measured in terms of minimum inhibitory concentration.
-I am reproducing this &lt;a href = &#34;https://www.dropbox.com/s/68ahri9xnnabce4/Bacteria-sigmoid-howto.docx?dl=0&#34;&gt;wonderful visualization&lt;/a&gt; from my professor in ggplot2, who did this in Tableau&lt;a href = &#34;http://driftlessdata.space/&#34;&gt; Silas Bergen&lt;/a&gt;.&lt;/p&gt;
+I am reproducing this &lt;a href = &#34;https://www.dropbox.com/s/68ahri9xnnabce4/Bacteria-sigmoid-howto.docx?dl=0&#34;&gt;wonderful visualization&lt;/a&gt; from my professor(&lt;a href = &#34;http://driftlessdata.space/&#34;&gt; Silas Bergen&lt;/a&gt;.) in ggplot2, who did this in Tableau&lt;/p&gt;
 &lt;p&gt;Let’s bring the datasets,&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(knitr)
