@@ -24,8 +24,8 @@
 &lt;h2&gt;Visually Classifying Bacteria and Antibiotics&lt;/h2&gt;
 &lt;p&gt;After World War II, antibiotics earned the moniker “wonder drugs” for quickly treating previously-incurable diseases. Data was gathered to determine which drug worked best for each bacterial infection. Comparing drug performance was an enormous aid for practitioners and scientists alike. In the fall of 1951, Will Burtin published a &lt;a href = &#34;https://mbostock.github.io/protovis/ex/antibiotics-burtin.html&#34;&gt;graph &lt;/a&gt; showing the effectiveness of three popular antibiotics on &lt;B&gt;16&lt;/B&gt; different bacteria, measured in terms of minimum inhibitory concentration.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/post/sankey_files/avb.jpg&#34; alt=&#34;image credit: Ask a biologist&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;image credit: Ask a biologist&lt;/p&gt;
+&lt;img src=&#34;/post/sankey_files/avb.jpg&#34; alt=&#34;image creidt: Ask a biologist&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;image creidt: Ask a biologist&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;I am reproducing this &lt;a href = &#34;https://www.dropbox.com/s/68ahri9xnnabce4/Bacteria-sigmoid-howto.docx?dl=0&#34;&gt;wonderful visualization&lt;/a&gt; from my professor(&lt;a href = &#34;http://driftlessdata.space/&#34;&gt; Silas Bergen&lt;/a&gt;.) in ggplot2, who did this in Tableau&lt;/p&gt;
 &lt;p&gt;Let’s bring the datasets,&lt;/p&gt;
@@ -1251,6 +1251,504 @@ plt.show()
 &lt;p&gt;You are more likely to be in room with 75 students &lt;span class=&#34;math inline&#34;&gt;\(((75*75) + (13*13)+(12*12)+(10*10))/110 = 54.89\)&lt;/span&gt;. Hence, the average reporting is not for you. This kind of paradoxes happen everywhere.&lt;/p&gt;
 &lt;p&gt;To generalize it in a more abstract way,&lt;/p&gt;
 &lt;p&gt;This is one case where the perspective of the individual and the group differs.For group, the average is what happens but as a individual the average will not make any sense.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ImageProcessing</title>
+      <link>/post/imageprocessing/</link>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>/post/imageprocessing/</guid>
+      <description>
+
+&lt;h1 id=&#34;smoothing-of-images-and-edge-detection&#34;&gt;Smoothing of Images and Edge Detection&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;              `The one with Criminal Behind the Gaussian Noise`
+
+            KAPIL KHANAL, DANIEL LEW, NILIMA PANDEY
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
+
+&lt;p&gt;In the parallel universe, Winona Police department came to us for identifying the location of a criminal. The &lt;code&gt;Criminal was hiding behind the gaussian noise&lt;/code&gt;.
+We took three steps to help the department.&lt;br&gt;
+&lt;li&gt;Identifying whether or not it was a gaussian noise
+&lt;li&gt;Smooth the photo using different techniques
+&lt;li&gt;Locate the important edges in the photograph.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+%matplotlib inline
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+#plt.style.use(&#39;ggplot&#39;)
+from ipywidgets import interact, interactive, fixed, interact_manual
+import ipywidgets as widgets
+from IPython.display import display
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A histogram is a graph or a plot that represents the distribution of the pixel intensities in an image&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;focus on the RGB color space&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Calculating the histogram of an image is very useful as it gives an intuition regarding some properties of the image such as the tonal range, the contrast and the brightness&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;image = cv2.imread(&amp;quot;Unidentified.png&amp;quot;)
+
+def histogram(image):
+fig,axs = plt.subplots(2,1,figsize = (12,11))
+channels = cv2.split(image)
+
+colors = (&amp;quot;b&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;r&amp;quot;) 
+
+for(channel, c) in zip(channels, colors):
+    histogram = cv2.calcHist([channel], [0], None, [256], [0, 256])
+    axs[0].plot(histogram, color = c,linewidth=1.0)
+axs[1].imshow(image[:,:,::-1])
+histogram(image)
+
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;DSCI_FINAL_Project_files/DSCI_FINAL_Project_4_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;gaussian-blur&#34;&gt;Gaussian Blur&lt;/h3&gt;
+
+&lt;p&gt;We Performed a Gaussian blur on the image. The blur removes some of the noise before further processing the image. A appropriate sigma can be computed from trial and error.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;In Gaussian Blurring, a Gaussian Kernel is used to blur the image.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cv2.GaussianBlur() function is used to blur the image&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cv2.getGaussianKernel() fcuntion can be used to to create a Gaussian Kernel.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;width and height of the kernel should be specified in the kernel and both of them should be positive and odd&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The standard deviation in X and Y direction, sigmaX and sigmaY should also be specified.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If only sigmaX is specified, sigmaY is taken same as the sigmaX&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If both sigmaX and sigmaY are given zero, they are calculated from the kernel size&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Gaussian Blurring is higly effective in removing gaussian noise from the image.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;gaussian-noise&#34;&gt;Gaussian Noise&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;attachment:Screen%20Shot%202018-12-07%20at%208.27.39%20PM%202.png&#34; alt=&#34;Screen%20Shot%202018-12-07%20at%208.27.39%20PM%202.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;?cv2.GaussianBlur()&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;attachment:Screen%20Shot%202018-12-07%20at%208.24.49%20PM%202.png&#34; alt=&#34;Screen%20Shot%202018-12-07%20at%208.24.49%20PM%202.png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def smoothed_gaussian(img,window_size,sigma,hist = True):
+    &amp;quot;&amp;quot;&amp;quot; Function called by interact &amp;quot;&amp;quot;&amp;quot;
+    img = cv2.GaussianBlur(img, (window_size, window_size), sigma)
+    if hist:
+        histogram(img)
+    return img
+y = interact(smoothed_gaussian,img = fixed(image),window_size = [3,5,7],sigma = widgets.IntSlider(min=0,max=10,step=1,value=4) )
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;interactive(children=(Dropdown(description=&#39;window_size&#39;, options=(3, 5, 7), value=3), IntSlider(value=4, desc…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;median-blur&#34;&gt;Median Blur&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def smoothed_median(img ,window_size,hist = True):
+    &amp;quot;&amp;quot;&amp;quot; Function called by interact &amp;quot;&amp;quot;&amp;quot;
+    img = cv2.medianBlur(img, window_size)
+    if hist:
+        histogram(img)
+    return img
+y = interact(smoothed_median,img = fixed(image),window_size  = widgets.IntSlider(min=1,max=10,step=2,value=3))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;interactive(children=(IntSlider(value=3, description=&#39;window_size&#39;, max=10, min=1, step=2), Checkbox(value=Tru…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;convolution&#34;&gt;Convolution&lt;/h3&gt;
+
+&lt;p&gt;Convolution is an important operation in signal and image processing.
+Convolution operateson two signals (in 1D) or two images (in 2D):you can think of one as the “input”
+signal (or image), and the other (called the kernel) as a “filter” on the input image, producing
+an output image (so convolution takes two images as input and produces a third
+as output).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://machinelearninguru.com/_images/topics/computer_vision/basics/convolution/1.JPG&#34; alt=&#34;Alt text&#34; title=&#34;Title text&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def smoothed_convolution(img,window_size,hist =True):
+    kernel = np.ones((window_size,window_size))/(window_size*window_size)
+    img = cv2.filter2D(img, -1,kernel)
+    if hist:
+        histogram(img)
+    return img
+y = interact(smoothed_convolution,img = fixed(image),window_size = widgets.IntSlider(min=0,max=10,step=1,value=3))
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;interactive(children=(IntSlider(value=3, description=&#39;window_size&#39;, max=10), Checkbox(value=True, description=…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edge detection is one of the fundamental operations when we perform image processing. It helps us reduce the amount of data (pixels) to process and maintains the structural aspect of the image&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def showEdges(img,blur,thresholds, blurType,window_size,sigma):
+    &amp;quot;&amp;quot;&amp;quot; Function called by interact &amp;quot;&amp;quot;&amp;quot;
+    if blurType == &#39;Median&#39;:
+        img = smoothed_median(img,window_size,hist = False)
+    elif blurType == &#39;Guassian&#39;:
+        img = smoothed_gaussian(img,window_size,sigma,hist = False)
+    elif blurType == &#39;Convolution&#39;:
+        img = smoothed_convolution(img,window_size,hist = False)
+    
+    thresh1, thresh2 = thresholds
+    edges = cv2.Canny(img, thresh1, thresh2)
+    plt.imshow(edges)
+    
+rangeSlider = widgets.IntRangeSlider(
+    value = [50, 200],
+    min = 0,
+    max = 255,
+    step = 1,
+    description = &#39;Thresholds&#39;,
+    continuous_update = True
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;y = interact(showEdges,
+         img = fixed(image),
+         blur = True,
+         thresholds = rangeSlider,
+         blurType = [&#39;Median&#39;, &#39;Guassian&#39;, &#39;Convolution&#39;],
+         window_size = [3,5,7,9],
+        sigma = widgets.IntSlider(min=0,max=10,step=1,value=4))
+        
+
+display(y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;interactive(children=(Checkbox(value=True, description=&#39;blur&#39;), IntRangeSlider(value=(50, 200), description=&#39;T…
+
+
+
+&amp;lt;function __main__.showEdges(img, blur, thresholds, blurType, window_size, sigma)&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/dsci_final_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/dsci_final_project/</guid>
+      <description>
+
+&lt;h1 id=&#34;smoothing-of-images-and-edge-detection&#34;&gt;Smoothing of Images and Edge Detection&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;              `The one with Criminal Behind the Gaussian Noise`
+
+            KAPIL KHANAL, DANIEL LEW, NILIMA PANDEY
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h3&gt;
+
+&lt;p&gt;In the parallel universe, Winona Police department came to us for identifying the location of a criminal. The &lt;code&gt;Criminal was hiding behind the gaussian noise&lt;/code&gt;.
+We took three steps to help the department.&lt;br&gt;
+&lt;li&gt;Identifying whether or not it was a gaussian noise
+&lt;li&gt;Smooth the photo using different techniques
+&lt;li&gt;Locate the important edges in the photograph.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+%matplotlib inline
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+#plt.style.use(&#39;ggplot&#39;)
+from ipywidgets import interact, interactive, fixed, interact_manual
+import ipywidgets as widgets
+from IPython.display import display
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A histogram is a graph or a plot that represents the distribution of the pixel intensities in an image&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;focus on the RGB color space&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Calculating the histogram of an image is very useful as it gives an intuition regarding some properties of the image such as the tonal range, the contrast and the brightness&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;image = cv2.imread(&amp;quot;Unidentified.png&amp;quot;)
+
+def histogram(image):
+fig,axs = plt.subplots(2,1,figsize = (12,11))
+channels = cv2.split(image)
+
+colors = (&amp;quot;b&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;r&amp;quot;) 
+
+for(channel, c) in zip(channels, colors):
+    histogram = cv2.calcHist([channel], [0], None, [256], [0, 256])
+    axs[0].plot(histogram, color = c,linewidth=1.0)
+axs[1].imshow(image[:,:,::-1])
+histogram(image)
+
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;DSCI_FINAL_Project_files/DSCI_FINAL_Project_4_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;gaussian-blur&#34;&gt;Gaussian Blur&lt;/h3&gt;
+
+&lt;p&gt;We Performed a Gaussian blur on the image. The blur removes some of the noise before further processing the image. A appropriate sigma can be computed from trial and error.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;In Gaussian Blurring, a Gaussian Kernel is used to blur the image.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cv2.GaussianBlur() function is used to blur the image&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cv2.getGaussianKernel() fcuntion can be used to to create a Gaussian Kernel.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;width and height of the kernel should be specified in the kernel and both of them should be positive and odd&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The standard deviation in X and Y direction, sigmaX and sigmaY should also be specified.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If only sigmaX is specified, sigmaY is taken same as the sigmaX&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If both sigmaX and sigmaY are given zero, they are calculated from the kernel size&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Gaussian Blurring is higly effective in removing gaussian noise from the image.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;gaussian-noise&#34;&gt;Gaussian Noise&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;attachment:Screen%20Shot%202018-12-07%20at%208.27.39%20PM%202.png&#34; alt=&#34;Screen%20Shot%202018-12-07%20at%208.27.39%20PM%202.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;?cv2.GaussianBlur()&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;attachment:Screen%20Shot%202018-12-07%20at%208.24.49%20PM%202.png&#34; alt=&#34;Screen%20Shot%202018-12-07%20at%208.24.49%20PM%202.png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def smoothed_gaussian(img,window_size,sigma,hist = True):
+    &amp;quot;&amp;quot;&amp;quot; Function called by interact &amp;quot;&amp;quot;&amp;quot;
+    img = cv2.GaussianBlur(img, (window_size, window_size), sigma)
+    if hist:
+        histogram(img)
+    return img
+y = interact(smoothed_gaussian,img = fixed(image),window_size = [3,5,7],sigma = widgets.IntSlider(min=0,max=10,step=1,value=4) )
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;interactive(children=(Dropdown(description=&#39;window_size&#39;, options=(3, 5, 7), value=3), IntSlider(value=4, desc…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;median-blur&#34;&gt;Median Blur&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def smoothed_median(img ,window_size,hist = True):
+    &amp;quot;&amp;quot;&amp;quot; Function called by interact &amp;quot;&amp;quot;&amp;quot;
+    img = cv2.medianBlur(img, window_size)
+    if hist:
+        histogram(img)
+    return img
+y = interact(smoothed_median,img = fixed(image),window_size  = widgets.IntSlider(min=1,max=10,step=2,value=3))
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;interactive(children=(IntSlider(value=3, description=&#39;window_size&#39;, max=10, min=1, step=2), Checkbox(value=Tru…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;convolution&#34;&gt;Convolution&lt;/h3&gt;
+
+&lt;p&gt;Convolution is an important operation in signal and image processing.
+Convolution operateson two signals (in 1D) or two images (in 2D):you can think of one as the “input”
+signal (or image), and the other (called the kernel) as a “filter” on the input image, producing
+an output image (so convolution takes two images as input and produces a third
+as output).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://machinelearninguru.com/_images/topics/computer_vision/basics/convolution/1.JPG&#34; alt=&#34;Alt text&#34; title=&#34;Title text&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def smoothed_convolution(img,window_size,hist =True):
+    kernel = np.ones((window_size,window_size))/(window_size*window_size)
+    img = cv2.filter2D(img, -1,kernel)
+    if hist:
+        histogram(img)
+    return img
+y = interact(smoothed_convolution,img = fixed(image),window_size = widgets.IntSlider(min=0,max=10,step=1,value=3))
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;interactive(children=(IntSlider(value=3, description=&#39;window_size&#39;, max=10), Checkbox(value=True, description=…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edge detection is one of the fundamental operations when we perform image processing. It helps us reduce the amount of data (pixels) to process and maintains the structural aspect of the image&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def showEdges(img,blur,thresholds, blurType,window_size,sigma):
+    &amp;quot;&amp;quot;&amp;quot; Function called by interact &amp;quot;&amp;quot;&amp;quot;
+    if blurType == &#39;Median&#39;:
+        img = smoothed_median(img,window_size,hist = False)
+    elif blurType == &#39;Guassian&#39;:
+        img = smoothed_gaussian(img,window_size,sigma,hist = False)
+    elif blurType == &#39;Convolution&#39;:
+        img = smoothed_convolution(img,window_size,hist = False)
+    
+    thresh1, thresh2 = thresholds
+    edges = cv2.Canny(img, thresh1, thresh2)
+    plt.imshow(edges)
+    
+rangeSlider = widgets.IntRangeSlider(
+    value = [50, 200],
+    min = 0,
+    max = 255,
+    step = 1,
+    description = &#39;Thresholds&#39;,
+    continuous_update = True
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;y = interact(showEdges,
+         img = fixed(image),
+         blur = True,
+         thresholds = rangeSlider,
+         blurType = [&#39;Median&#39;, &#39;Guassian&#39;, &#39;Convolution&#39;],
+         window_size = [3,5,7,9],
+        sigma = widgets.IntSlider(min=0,max=10,step=1,value=4))
+        
+
+display(y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;interactive(children=(Checkbox(value=True, description=&#39;blur&#39;), IntRangeSlider(value=(50, 200), description=&#39;T…
+
+
+
+&amp;lt;function __main__.showEdges(img, blur, thresholds, blurType, window_size, sigma)&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Verifying empirical rule and Chebyshev&#39;s theorem</title>
+      <link>/post/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/untitled/</guid>
+      <description>
+
+
+&lt;div id=&#34;empirical-rule-and-chebyshevs-theorem&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Empirical rule and Chebyshev’s theorem&lt;/h2&gt;
+&lt;p&gt;Let’s talk about this really simple concept but powerful one. &lt;code&gt;Data Distributions&lt;/code&gt;. A data distribution is an abstract concept(a function) that gives the the possible values of data and also how often that data is generated. When you want to talk about the all the data of your experiments at once, then talk about data distribution. A data distribution gives us the probability of how often that data will be an output if we keep repeating the experiment.&lt;/p&gt;
+&lt;p&gt;We rarely have the complete dataset from the experiment.So, it is powerful to have the an idea of how data is distributed and which data occurs more often than others. We can intuitively understand some distributions like the height of the populations. We know there will be few people with really short height while few have more height. But we are sure that most of the people will be in between.This is really convienient for us to know in advance the spread and frequency of the data.
+&lt;img src=&#34;/post/Untitled_files/normal.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Interesting thing is that there are more than one kinds of distributions in the world. So the convienience if knowing in advance the spread of the data will be helpful. There is a famous theorem that givrs us an idea of how our data is distributed. It’s called Chebyshev’s theorem.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/post/Untitled_files/chebyshev.jpg&#34; alt=&#34;image credit: libretext&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;image credit: libretext&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It says that most(3/4th) of our data will be at max two standard deviations from the mean.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(knitr)
+library(kableExtra)
+stock&amp;lt;- read.csv(&amp;quot;~/OneDrive - MNSCU/FALL 2019/MathStat/Data/Stock Trade.csv&amp;quot;,stringsAsFactors = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now let’s clean the name,&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;stock&amp;lt;- stock %&amp;gt;% select(percentStock = X..of.Shares.Outstanding)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The empirical rule says that 68% of the data will be within two standard deviation.&lt;/p&gt;
+&lt;p&gt;This function below:
+1. standardizes the data &lt;br&gt;
+2. counts data within &lt;code&gt;z&lt;/code&gt; standard deviations &lt;br&gt;
+3. outputs the proportion&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data_within&amp;lt;- function(df, z){
+  func_normalize&amp;lt;-function(x){(x-mean(x))/sd(x)}
+  #&amp;gt;11 after removing a data point 
+  df&amp;lt;-df %&amp;gt;% filter(percentStock&amp;lt;11)
+  df_scaled&amp;lt;- df %&amp;gt;% mutate(percentStock_normal = func_normalize(percentStock)) %&amp;gt;% filter(abs(percentStock_normal)&amp;lt;z)
+  proportion = dim(df_scaled)[1]/dim(df)[1]
+  return (round(proportion,2))
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s collect the output in a small tibble.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tb&amp;lt;- tibble(
+  first_std_dev = data_within(stock,1),
+  second_std_dev = data_within(stock,2),
+  third_std_dev = data_within(stock,3),
+)
+
+kable(tb)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+first_std_dev
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+second_std_dev
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+third_std_dev
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.64
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.92
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We can also test if our function is working correctly,&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(testthat)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;testthat&amp;#39; was built under R version 3.5.2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;normal_generated = tibble(percentStock = rnorm(10,mean = 6.2,sd = 1.2))
+
+#Testing our function
+tb_test&amp;lt;- tibble(
+  first_std_dev = data_within(normal_generated,1),
+  second_std_dev = data_within(normal_generated,2),
+  third_std_dev = data_within(normal_generated,3),
+)
+
+
+kable(tb_test)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+first_std_dev
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+second_std_dev
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+third_std_dev
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;testthat::expect_gt(tb_test$first_std_dev, 0.68,label = &amp;quot;data proportion within first deivation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hence, our function is working correctly.Note that the data is randomly generated every time the code is run.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

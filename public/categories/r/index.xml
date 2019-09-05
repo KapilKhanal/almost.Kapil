@@ -24,8 +24,8 @@
 &lt;h2&gt;Visually Classifying Bacteria and Antibiotics&lt;/h2&gt;
 &lt;p&gt;After World War II, antibiotics earned the moniker “wonder drugs” for quickly treating previously-incurable diseases. Data was gathered to determine which drug worked best for each bacterial infection. Comparing drug performance was an enormous aid for practitioners and scientists alike. In the fall of 1951, Will Burtin published a &lt;a href = &#34;https://mbostock.github.io/protovis/ex/antibiotics-burtin.html&#34;&gt;graph &lt;/a&gt; showing the effectiveness of three popular antibiotics on &lt;B&gt;16&lt;/B&gt; different bacteria, measured in terms of minimum inhibitory concentration.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/post/sankey_files/avb.jpg&#34; alt=&#34;image credit: Ask a biologist&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;image credit: Ask a biologist&lt;/p&gt;
+&lt;img src=&#34;/post/sankey_files/avb.jpg&#34; alt=&#34;image creidt: Ask a biologist&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;image creidt: Ask a biologist&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;I am reproducing this &lt;a href = &#34;https://www.dropbox.com/s/68ahri9xnnabce4/Bacteria-sigmoid-howto.docx?dl=0&#34;&gt;wonderful visualization&lt;/a&gt; from my professor(&lt;a href = &#34;http://driftlessdata.space/&#34;&gt; Silas Bergen&lt;/a&gt;.) in ggplot2, who did this in Tableau&lt;/p&gt;
 &lt;p&gt;Let’s bring the datasets,&lt;/p&gt;
@@ -1096,6 +1096,128 @@ t.test(level, mu = 5.4)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You are more likely to be in room with 75 students &lt;span class=&#34;math inline&#34;&gt;\(((75*75) + (13*13)+(12*12)+(10*10))/110 = 54.89\)&lt;/span&gt;. Hence, the average reporting is not for you. This kind of paradoxes happen everywhere.&lt;/p&gt;
 &lt;p&gt;To generalize it in a more abstract way,&lt;/p&gt;
 &lt;p&gt;This is one case where the perspective of the individual and the group differs.For group, the average is what happens but as a individual the average will not make any sense.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Verifying empirical rule and Chebyshev&#39;s theorem</title>
+      <link>/post/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/untitled/</guid>
+      <description>
+
+
+&lt;div id=&#34;empirical-rule-and-chebyshevs-theorem&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Empirical rule and Chebyshev’s theorem&lt;/h2&gt;
+&lt;p&gt;Let’s talk about this really simple concept but powerful one. &lt;code&gt;Data Distributions&lt;/code&gt;. A data distribution is an abstract concept(a function) that gives the the possible values of data and also how often that data is generated. When you want to talk about the all the data of your experiments at once, then talk about data distribution. A data distribution gives us the probability of how often that data will be an output if we keep repeating the experiment.&lt;/p&gt;
+&lt;p&gt;We rarely have the complete dataset from the experiment.So, it is powerful to have the an idea of how data is distributed and which data occurs more often than others. We can intuitively understand some distributions like the height of the populations. We know there will be few people with really short height while few have more height. But we are sure that most of the people will be in between.This is really convienient for us to know in advance the spread and frequency of the data.
+&lt;img src=&#34;/post/Untitled_files/normal.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Interesting thing is that there are more than one kinds of distributions in the world. So the convienience if knowing in advance the spread of the data will be helpful. There is a famous theorem that givrs us an idea of how our data is distributed. It’s called Chebyshev’s theorem.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/post/Untitled_files/chebyshev.jpg&#34; alt=&#34;image credit: libretext&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;image credit: libretext&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It says that most(3/4th) of our data will be at max two standard deviations from the mean.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(knitr)
+library(kableExtra)
+stock&amp;lt;- read.csv(&amp;quot;~/OneDrive - MNSCU/FALL 2019/MathStat/Data/Stock Trade.csv&amp;quot;,stringsAsFactors = FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now let’s clean the name,&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;stock&amp;lt;- stock %&amp;gt;% select(percentStock = X..of.Shares.Outstanding)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The empirical rule says that 68% of the data will be within two standard deviation.&lt;/p&gt;
+&lt;p&gt;This function below:
+1. standardizes the data &lt;br&gt;
+2. counts data within &lt;code&gt;z&lt;/code&gt; standard deviations &lt;br&gt;
+3. outputs the proportion&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data_within&amp;lt;- function(df, z){
+  func_normalize&amp;lt;-function(x){(x-mean(x))/sd(x)}
+  #&amp;gt;11 after removing a data point 
+  df&amp;lt;-df %&amp;gt;% filter(percentStock&amp;lt;11)
+  df_scaled&amp;lt;- df %&amp;gt;% mutate(percentStock_normal = func_normalize(percentStock)) %&amp;gt;% filter(abs(percentStock_normal)&amp;lt;z)
+  proportion = dim(df_scaled)[1]/dim(df)[1]
+  return (round(proportion,2))
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s collect the output in a small tibble.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tb&amp;lt;- tibble(
+  first_std_dev = data_within(stock,1),
+  second_std_dev = data_within(stock,2),
+  third_std_dev = data_within(stock,3),
+)
+
+kable(tb)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+first_std_dev
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+second_std_dev
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+third_std_dev
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.64
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.92
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We can also test if our function is working correctly,&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(testthat)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: package &amp;#39;testthat&amp;#39; was built under R version 3.5.2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;normal_generated = tibble(percentStock = rnorm(10,mean = 6.2,sd = 1.2))
+
+#Testing our function
+tb_test&amp;lt;- tibble(
+  first_std_dev = data_within(normal_generated,1),
+  second_std_dev = data_within(normal_generated,2),
+  third_std_dev = data_within(normal_generated,3),
+)
+
+
+kable(tb_test)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+first_std_dev
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+second_std_dev
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+third_std_dev
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;testthat::expect_gt(tb_test$first_std_dev, 0.68,label = &amp;quot;data proportion within first deivation&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hence, our function is working correctly.Note that the data is randomly generated every time the code is run.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

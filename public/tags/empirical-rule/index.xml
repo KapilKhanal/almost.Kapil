@@ -1,51 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science | Transponster</title>
-    <link>/tags/data-science/</link>
-      <atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
-    <description>Data Science</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Tue, 23 Jul 2019 21:13:14 -0500</lastBuildDate>
+    <title>Empirical rule | Transponster</title>
+    <link>/tags/empirical-rule/</link>
+      <atom:link href="/tags/empirical-rule/index.xml" rel="self" type="application/rss+xml" />
+    <description>Empirical rule</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright>
     <image>
       <url>/img/aph-salt-spring-zoom.jpg</url>
-      <title>Data Science</title>
-      <link>/tags/data-science/</link>
+      <title>Empirical rule</title>
+      <link>/tags/empirical-rule/</link>
     </image>
-    
-    <item>
-      <title>Testing Alcohol level</title>
-      <link>/post/beer/</link>
-      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
-      <guid>/post/beer/</guid>
-      <description>
-
-
-&lt;div id=&#34;is-there-really-5.4-alcohol-in-that-beer-brand&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Is there really 5.4% alcohol in that beer brand?&lt;/h2&gt;
-&lt;p&gt;We all see that a lot of brand publish on their wrapper that the alcohol level is 5.4%. Let’s say we collected the percent level of volume for those brand. We sampled randomly and measured the alcohol level ourselves&lt;/p&gt;
-&lt;p&gt;So we believe that the actual beer percent should be 5.4% but as a beer consumer, we feel sometime it’s not.&lt;/p&gt;
-&lt;p&gt;if we measure one, and found out that beer has 6.7 we would immediately complain that the brand is telling us lie that there is 5.4% . They may argue that our measuring apparatus or technique is not 100% accurate. There is no way of finding our inaccurate our measurement without measuring it multiple times or taking measurement of multiple beers. It might be the case that our measurement is 100% accurate and the beer has more alcohol than the company is saying. We don’t really know. Also, we can’t measure every single beer they ever manufactured.
-This is the perfect timing to test this with our statistics sense,
-Below we have a list of measurements from different beer randomly bought, some from midtown, some from walmart.
-Let’s do a t-test.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;level = c(5.1,5.2,6,7,5.01,5.0,6.5,5.6,5.2,6.1,6.2,5.0)
-t.test(level, mu = 5.4)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-##  One Sample t-test
-## 
-## data:  level
-## t = 1.3139, df = 11, p-value = 0.2156
-## alternative hypothesis: true mean is not equal to 5.4
-## 95 percent confidence interval:
-##  5.225010 6.093323
-## sample estimates:
-## mean of x 
-##  5.659167&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The p-value is greater than 0.05 and confidence interval [5.17 to 6.17]. Which means if 100 people have done this random sampling of beer and have calculated the confidence interval , then the mean[5.4] would have always fall in the confidence interval.&lt;/p&gt;
-&lt;p&gt;Enough with the statistical jargon? Okay let’s enjoy the beer&lt;img src=&#34;/post/Beer_files/giphy.gif&#34; alt=&#34;Cold Beer and Confidence Interval&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
     
     <item>
       <title>Verifying empirical rule and Chebyshev&#39;s theorem</title>

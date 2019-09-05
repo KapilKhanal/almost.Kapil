@@ -48,18 +48,18 @@
   </url>
   
   <url>
-    <loc>/categories/ggplot2/</loc>
-    <lastmod>2019-07-24T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/ggplot2/</loc>
     <lastmod>2019-07-24T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/categories/ggplot2/</loc>
     <lastmod>2019-07-24T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-08-31T22:21:57-05:00</lastmod>
   </url>
   
   <url>
@@ -223,6 +223,11 @@
   </url>
   
   <url>
+    <loc>/post/imageprocessing/</loc>
+    <lastmod>2019-08-31T22:21:57-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
@@ -272,11 +277,24 @@
   </url>
   
   <url>
+    <loc>/post/dsci_final_project/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/authors/</loc>
   </url>
   
   <url>
     <loc>/courses/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/empirical-rule/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/untitled/</loc>
   </url>
   
 </urlset>
