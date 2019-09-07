@@ -15,15 +15,15 @@
   url = "#projects"
   weight = 30
 
-#[[main]]
- # name = "Publications"
-  #url = "#featured"
-  #weight = 40
+[[main]]
+  name = "Gists"
+  url = "https://kapil-khanal.gitbook.io/blogging-as-book/"
+  weight = 40
 
-#[[main]]
- # name = "Courses"
-  #url = "courses/"
-  #weight = 50
+[[main]]
+  name = "Schedule"
+  url = "files/Schedule.png"
+  weight = 50
 
 
 
