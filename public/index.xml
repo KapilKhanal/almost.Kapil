@@ -116,6 +116,10 @@
 &lt;div id=&#34;stockx-data-contest-2019&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Stock&lt;span style=&#34;color:green&#34;&gt;&lt;b&gt;X&lt;/b&gt;&lt;/span&gt; Data Contest 2019&lt;/h2&gt;
 &lt;p&gt;&lt;a href = &#34;https://stockx.com/news/the-2019-data-contest/&#34;&gt;StockX Challenge&lt;/a&gt; is a call for data and sneakers nerds to have fun.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/post/stockX_files/sneaker.jpg&#34; alt=&#34;source: stockX&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;source: stockX&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;The basic idea is this: they give you a bunch of original StockX sneaker data, then you crunch the numbers and come up with the coolest, smartest, most compelling story you can tell. It can be literally anything you want. A theory, an insight, even just a really original data visualization. It could be a novel hypothesis about resale prices you’ve always wanted to test. Or maybe it’s just a beautiful chart to visualize the data. It can be on any subject – sneakers, brands, buyers, or even StockX itself. Whatever you find interesting, just follow your bliss.&lt;/p&gt;
 &lt;p&gt;I also gave a shot on trying to come up with something useful. Below is my finished data dashboard. &lt;br&gt;&lt;/p&gt;
 &lt;div id=&#34;my-data-dashboard-for-stockx&#34; class=&#34;section level3&#34;&gt;
