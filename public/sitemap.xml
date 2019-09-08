@@ -34,21 +34,46 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-07-24T21:13:14-05:00</lastmod>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-communication/</loc>
-    <lastmod>2019-07-24T21:13:14-05:00</lastmod>
+    <loc>/post/stockx/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-science/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/data-visualization/</loc>
-    <lastmod>2019-07-24T21:13:14-05:00</lastmod>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ggplot2/</loc>
+    <loc>/post/</loc>
+    <lastmod>2019-08-31T22:21:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tableau/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/tableau/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-communication/</loc>
     <lastmod>2019-07-24T21:13:14-05:00</lastmod>
   </url>
   
@@ -58,8 +83,8 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-08-31T22:21:57-05:00</lastmod>
+    <loc>/tags/ggplot2/</loc>
+    <lastmod>2019-07-24T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -73,22 +98,12 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-07-24T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/applied-statistics/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/data-product/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/data-science/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   

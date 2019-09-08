@@ -1,0 +1,62 @@
+---
+title: "Data Dashboard for StockX Contest"
+author: "Kapil Khanal"
+date: 2019-08-21T21:13:14-05:00
+categories: ["Tableau"]
+tags: ["Tableau", "Data Visualization", "Data Science"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Stock<span style="color:green"><b>X</b></span> Data Contest 2019
+
+<a href = "https://stockx.com/news/the-2019-data-contest/">StockX Challenge</a> is a call  for data and sneakers nerds to have fun. 
+
+The basic idea is this: they give you a bunch of original StockX sneaker data, then you crunch the numbers and come up with the coolest, smartest, most compelling story you can tell. It can be literally anything you want. A theory, an insight, even just a really original data visualization. It could be a novel hypothesis about resale prices you’ve always wanted to test. Or maybe it’s just a beautiful chart to visualize the data. It can be on any subject – sneakers, brands, buyers, or even StockX itself. Whatever you find interesting, just follow your bliss.
+
+I also gave a shot on trying to come up with something useful. Below is my finished data dashboard. <br>
+
+### My Data Dashboard for Stock<span style="color:green"><b>X</b></span>
+![Dashboard](/post/index_files/stockX.png)
+
+The link for tableau worksheet is <a href = "https://public.tableau.com/views/StockX_0/Dashboard1?:embed=y&:display_count=yes&:origin=viz_share_link">here</a> <br>
+
+*Calculations on the Dashboards* </br>
+
+`Price ratio`: Ratio of Sales to Retail Price for Each Sneakers <br>
+`Weeks`: (Order Date - Release Date) Converted in Weeks.<br>
+`Median Price ratio` is chosen to eliminate the effect of asymmetrical range of dates(2017-2019 not
+complete as 2018) and counts of sneakers sales.<br>
+`Color` Scale for two brands are consistent whenever there is plot relating to brands.<br>
+
+<b>1) Order of Sneakers by brand for weeks from Release Date</b><br>
+
+This plot shows the total count of orders for different sneakers of two brands
+Both Brands are ordered before the release date. Off white has more orders than yeezy on the datasets.
+
+
+It's interesting how the demand of yeezy increased at around `90 weeks` after the release of the shoes.
+--------------------------------------------------------------------------------------------
+
+2)<b>Ratio of Sales Price to Retail Price For each Brand by Weeks</b>
+
+This plot look at the relation of ratio of sale price to retail price for each brands and weeks after release
+date. Clearly,Both Brand's sale price is more than the retail price. The ratio of off-White increases in
+general regardless of the individual sneakers while the ratio of yeezy brands is somewhat noisy but it has
+a trend like off white. Both brand's price ratio is increased after the release date.<br>
+
+<b>3)Distribution of Median Sales price given the retail price for each brand</b><br>
+This plot looks in detail on how the median sale price is distributed for each sneaker. The distribution of
+median sale price for top 28 sneakers which were sold as least as 5 times over retail price are plotted.
+
+<b>4) Median Price and States</b> <br>
+
+This plot is looking at the median price ratio for all the states. The color scale is chosen for the ratio and
+the size of the sneakers shows total sales relative to others. Which states usually pays more for
+sneakers? Clearly, Delaware,Vermont,Utah had some sales with high price ratio. States like California and
+Newyork have a lot of sales as shown by their relative sizes. The relative size is calculated by taking the
+log of total sales in each states. States like Wyoming have less Sales and also with lower sales ratio.
+
+
