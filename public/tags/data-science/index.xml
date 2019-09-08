@@ -68,6 +68,48 @@ log of total sales in each states. States like Wyoming have less Sales and also 
     </item>
     
     <item>
+      <title>Winona Area Public Schools: Community Contribution</title>
+      <link>/post/waps/</link>
+      <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
+      <guid>/post/waps/</guid>
+      <description>
+
+
+&lt;div id=&#34;winona-area-public-schools-data-visualization&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Winona Area Public Schools Data Visualization&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Introduction&lt;/code&gt;:&lt;br&gt;
+This Project addresses the need of communication of public school data to community members in an meaningful way.Also, making the data available to general public in a proper and useable format. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Primarily, this Project was focused on cleaning and visualizing the Enrollment,Expenditures and Staffing History reports of the Winona Area Public District(WAPS) available publicly through Minnesota department of education, Data Center
+Link:&lt;a href=&#34;http://education.state.mn.us/MDE/Data/&#34; class=&#34;uri&#34;&gt;http://education.state.mn.us/MDE/Data/&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;methods-and-steps-of-projects&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Methods and Steps of Projects:&lt;/h4&gt;
+&lt;p&gt;1)Data Inspection/Acquisition:&lt;br&gt;
+Data was made available by Allison Quam(Representative from WAPS District).
+The Data were made available in different pdf/excel files. Also, the information were scattered in different files.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;2)Data Cleaning and Formatting&lt;br&gt;
+First,most of the pdf files were converted to excel by Tabula(Link:&lt;a href=&#34;http://tabula.technology/&#34; class=&#34;uri&#34;&gt;http://tabula.technology/&lt;/a&gt;) and online tool(&lt;a href=&#34;http://pdftoexcel.com&#34; class=&#34;uri&#34;&gt;http://pdftoexcel.com&lt;/a&gt;)
+then, they were cleaned up in proper format and stacked using Python (Pandas).&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;3)Data Exploration and Visualization &lt;br&gt;
+This part of the project is focused on addressing the questions provided by representative of WAPS(&lt;code&gt;Allison Quam&lt;/code&gt; ).
+Tableau was used extensively to explore the data and visualize it.
+Primarily, i focused on answering following questions:&lt;br&gt;
+a)First,i was curious about,how does the enrollment and capture rate(rate of new born enrolling to Kindergarten)is changing on WAPS district? &lt;br&gt;
+After few meetings with representative, i knew she was curious about how schools spends on across different programs.&lt;br&gt;
+b)How the expenditure per average daily membership (count of student daily served in schools) and spending on various category is changing?&lt;br&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;acknowledgement&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Acknowledgement&lt;/h4&gt;
+&lt;p&gt;I would like to thank Allison Quam and Prof.Silas Bergen on helping and guiding me to understand the terms and calculations already done in the reports and Prof.Todd Iverson to help figure out Python code for cleaning the data.&lt;/p&gt;
+&lt;p&gt;Now, Visual Story Begins……-&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/WAPS_files/Second_Dashboard.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/WAPS_files/Third_Dashboard.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/WAPS_files/Fourth_Dashboard.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Testing Alcohol level</title>
       <link>/post/beer/</link>
       <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>

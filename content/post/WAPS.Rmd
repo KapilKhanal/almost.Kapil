@@ -1,0 +1,48 @@
+---
+title: "Winona Area Public Schools: Community Contribution"
+author: "Kapil Khanal"
+date: 2019-08-21T21:13:14-05:00
+categories: ["Tableau"]
+tags: ["Tableau", "Data Visualization", "Data Science","winona"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Winona Area Public Schools Data Visualization 
+`Introduction`:<br>
+This Project addresses the need of communication of public school data to community members in an meaningful way.Also, making the data available to general public in a proper and useable format. <br>
+
+Primarily, this Project was focused on cleaning and visualizing the Enrollment,Expenditures and Staffing History reports of the Winona Area Public District(WAPS) available publicly through Minnesota department of education, Data Center
+Link:http://education.state.mn.us/MDE/Data/
+
+#### Methods and Steps of Projects:
+1)Data Inspection/Acquisition:<br>
+Data was made available by Allison Quam(Representative from WAPS District).
+The Data were made available in different pdf/excel files. Also, the information were scattered in different files.<br>
+
+2)Data Cleaning and Formatting<br>
+First,most of the pdf files were converted to excel by Tabula(Link:http://tabula.technology/) and online tool(http://pdftoexcel.com)
+then, they were cleaned up in proper format and stacked using Python (Pandas).<br>
+
+3)Data Exploration and Visualization <br>
+This part of the project is focused on addressing the questions provided by representative of WAPS(`Allison Quam` ). 
+Tableau was used extensively to explore the data and visualize it.
+Primarily, i focused on answering following questions:<br>
+a)First,i was curious about,how does the enrollment and capture rate(rate of new born enrolling to Kindergarten)is changing on WAPS district? <br>
+After few meetings with representative, i knew she was curious about how schools spends on across different programs.<br>
+b)How the expenditure per average daily membership (count of student daily served in schools)  and spending on various category is changing?<br>
+
+#### Acknowledgement
+I would like to thank Allison Quam and Prof.Silas Bergen on helping and guiding me to understand the terms and calculations already done in the reports and Prof.Todd Iverson to help figure out Python code for cleaning the data.
+
+Now, Visual Story Begins......->
+
+![](/post/WAPS_files/Second_Dashboard.png)
+
+![](/post/WAPS_files/Third_Dashboard.png)
+
+![](/post/WAPS_files/Fourth_Dashboard.png)
+
+
