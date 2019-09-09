@@ -25,10 +25,10 @@
 &lt;p&gt;&lt;code&gt;Introduction&lt;/code&gt;:&lt;br&gt;
 This Project addresses the need of communication of public school data to community members in an meaningful way.Also, making the data available to general public in a proper and useable format. &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Primarily, this Project was focused on cleaning and visualizing the Enrollment,Expenditures and Staffing History reports of the Winona Area Public District(WAPS) available publicly through Minnesota department of education, Data Center
-Link:&lt;a href=&#34;http://education.state.mn.us/MDE/Data/&#34; class=&#34;uri&#34;&gt;http://education.state.mn.us/MDE/Data/&lt;/a&gt;&lt;/p&gt;
-&lt;div id=&#34;methods-and-steps-of-projects&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;Methods and Steps of Projects:&lt;/h4&gt;
-&lt;p&gt;1)Data Inspection/Acquisition:&lt;br&gt;
+Link:&lt;a href=&#34;http://education.state.mn.us/MDE/Data/&#34; class=&#34;uri&#34;&gt;http://education.state.mn.us/MDE/Data/&lt;/a&gt;
+&lt;img src=&#34;/post/WAPS_files/waps.png&#34; /&gt;
+#### Methods and Steps of Projects:
+1)Data Inspection/Acquisition:&lt;br&gt;
 Data was made available by Allison Quam(Representative from WAPS District).
 The Data were made available in different pdf/excel files. Also, the information were scattered in different files.&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;2)Data Cleaning and Formatting&lt;br&gt;
@@ -41,11 +41,11 @@ Primarily, i focused on answering following questions:&lt;br&gt;
 a)First,i was curious about,how does the enrollment and capture rate(rate of new born enrolling to Kindergarten)is changing on WAPS district? &lt;br&gt;
 After few meetings with representative, i knew she was curious about how schools spends on across different programs.&lt;br&gt;
 b)How the expenditure per average daily membership (count of student daily served in schools) and spending on various category is changing?&lt;br&gt;&lt;/p&gt;
-&lt;/div&gt;
 &lt;div id=&#34;acknowledgement&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Acknowledgement&lt;/h4&gt;
 &lt;p&gt;I would like to thank Allison Quam and Prof.Silas Bergen on helping and guiding me to understand the terms and calculations already done in the reports and Prof.Todd Iverson to help figure out Python code for cleaning the data.&lt;/p&gt;
-&lt;p&gt;Now, Visual Story Begins……-&amp;gt;&lt;/p&gt;
+&lt;p&gt;The link to the tableau file and the data is &lt;a href = &#34;https://public.tableau.com/views/WinonaAreaPublicSchoolsDataStory/FourthDashboard?:retry=yes&amp;:embed=y&amp;:display_count=yes&amp;:origin=viz_share_link&#34;&gt; &lt;b&gt;here&lt;/b&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now, Visual Story Begins….&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/WAPS_files/Second_Dashboard.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/WAPS_files/Third_Dashboard.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/WAPS_files/Fourth_Dashboard.png&#34; /&gt;&lt;/p&gt;

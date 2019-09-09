@@ -16,7 +16,7 @@ This Project addresses the need of communication of public school data to commun
 
 Primarily, this Project was focused on cleaning and visualizing the Enrollment,Expenditures and Staffing History reports of the Winona Area Public District(WAPS) available publicly through Minnesota department of education, Data Center
 Link:http://education.state.mn.us/MDE/Data/
-
+![](/post/WAPS_files/waps.png)
 #### Methods and Steps of Projects:
 1)Data Inspection/Acquisition:<br>
 Data was made available by Allison Quam(Representative from WAPS District).
@@ -37,7 +37,11 @@ b)How the expenditure per average daily membership (count of student daily serve
 #### Acknowledgement
 I would like to thank Allison Quam and Prof.Silas Bergen on helping and guiding me to understand the terms and calculations already done in the reports and Prof.Todd Iverson to help figure out Python code for cleaning the data.
 
-Now, Visual Story Begins......->
+The link to the tableau file and the data is <a href = "https://public.tableau.com/views/WinonaAreaPublicSchoolsDataStory/FourthDashboard?:retry=yes&:embed=y&:display_count=yes&:origin=viz_share_link"> <b>here</b> </a>
+
+Now, Visual Story Begins....
+
+
 
 ![](/post/WAPS_files/Second_Dashboard.png)
 
