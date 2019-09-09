@@ -24,11 +24,14 @@
 &lt;h3&gt;Winona Area Public Schools Data Visualization&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;Introduction&lt;/code&gt;:&lt;br&gt;
 This Project addresses the need of communication of public school data to community members in an meaningful way.Also, making the data available to general public in a proper and useable format. &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Primarily, this Project was focused on cleaning and visualizing the Enrollment,Expenditures and Staffing History reports of the Winona Area Public District(WAPS) available publicly through Minnesota department of education, Data Center
+Primarily, this Project was focused on cleaning and visualizing the Enrollment,Expenditures and Staffing History reports of the Winona Area Public District(WAPS) available publicly through Minnesota department of education, Data Center
 Link:&lt;a href=&#34;http://education.state.mn.us/MDE/Data/&#34; class=&#34;uri&#34;&gt;http://education.state.mn.us/MDE/Data/&lt;/a&gt;
-&lt;img src=&#34;/post/WAPS_files/waps.png&#34; /&gt;
-#### Methods and Steps of Projects:
-1)Data Inspection/Acquisition:&lt;br&gt;
+&lt;img src=&#34;/post/WAPS_files/waps.png&#34; /&gt; &lt;br&gt;
+&lt;h5&gt;
+Methods and Steps of Projects
+&lt;/h5&gt;
+&lt;p&gt;.
+1)Data Inspection/Acquisition:.&lt;br&gt;
 Data was made available by Allison Quam(Representative from WAPS District).
 The Data were made available in different pdf/excel files. Also, the information were scattered in different files.&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;2)Data Cleaning and Formatting&lt;br&gt;

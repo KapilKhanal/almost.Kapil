@@ -16,11 +16,11 @@ This Project addresses the need of communication of public school data to commun
 
 Primarily, this Project was focused on cleaning and visualizing the Enrollment,Expenditures and Staffing History reports of the Winona Area Public District(WAPS) available publicly through Minnesota department of education, Data Center
 Link:http://education.state.mn.us/MDE/Data/
-![](/post/WAPS_files/waps.png)
-#### Methods and Steps of Projects:
-1)Data Inspection/Acquisition:<br>
-Data was made available by Allison Quam(Representative from WAPS District).
-The Data were made available in different pdf/excel files. Also, the information were scattered in different files.<br>
+![](/post/WAPS_files/waps.png) <br>
+<h5>Methods and Steps of Projects</h5>.
+1)Data Inspection/Acquisition:.<br>
+ Data was made available by Allison Quam(Representative from WAPS District).
+ The Data were made available in different pdf/excel files. Also, the information were       scattered in different files.<br>
 
 2)Data Cleaning and Formatting<br>
 First,most of the pdf files were converted to excel by Tabula(Link:http://tabula.technology/) and online tool(http://pdftoexcel.com)
