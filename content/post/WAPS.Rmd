@@ -10,7 +10,7 @@ tags: ["Tableau", "Data Visualization", "Data Science","winona"]
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Winona Area Public Schools Data Visualization 
+###  <span style="color:purple">Winona Area Public Schools Data Visualization </span>
 `Introduction`:<br>
 This Project addresses the need of communication of public school data to community members in an meaningful way.Also, making the data available to general public in a proper and useable format. <br>
 
@@ -30,11 +30,11 @@ then, they were cleaned up in proper format and stacked using Python (Pandas).<b
 This part of the project is focused on addressing the questions provided by representative of WAPS(`Allison Quam` ). 
 Tableau was used extensively to explore the data and visualize it.
 Primarily, i focused on answering following questions.<br>
- 1. First,i was curious about,how does the enrollment and capture rate(rate of new born enrolling to Kindergarten)is changing on WAPS district?. <br>
+ 1. <span style="color:purple">**I was curious about,how does the enrollment and capture rate(rate of new born enrolling to Kindergarten)is changing on WAPS district?.** </span><br>
  
- After few meetings with representative, i knew she was curious about how schools spends on across different programs.<br>
+After few meetings with representative, i knew she was curious about how schools spends on across different programs.<br>
  
- 2. How the expenditure per average daily membership (count of student daily served in schools)  and spending on various category is changing?.<br>
+2.<span style="color:purple">**How the expenditure per average daily membership (count of student daily served in schools)  and spending on various category is changing?.</span>**<br>
 
 #### Acknowledgement
 I would like to thank Allison Quam and Prof.Silas Bergen on helping and guiding me to understand the terms and calculations already done in the reports and Prof.Todd Iverson to help figure out Python code for cleaning the data.
