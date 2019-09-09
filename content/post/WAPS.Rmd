@@ -14,12 +14,16 @@ knitr::opts_chunk$set(echo = TRUE)
 `Introduction`:<br>
 This Project addresses the need of communication of public school data to community members in an meaningful way.Also, making the data available to general public in a proper and useable format. <br>
 
+There has been a wider discussion regarding the budget issue in Winona area schools. Here is
+<a href = "https://www.winonadailynews.com/news/local/what-will-waps-cut-board-to-weigh-new-options-for/article_23c25b9f-7365-5aa2-b370-1ed251eb8231.html"
+ width="645" height="955">the article </a>
+
 Primarily, this Project was focused on cleaning and visualizing the Enrollment,Expenditures and Staffing History reports of the Winona Area Public District(WAPS) available publicly through Minnesota department of education, Data Center
 Link:http://education.state.mn.us/MDE/Data/
 ![](/post/WAPS_files/waps.png) <br>
-<h5>Methods and Steps of Projects</h5>.
+<h5>Methods and Steps of Projects</h5>
 1)Data Inspection/Acquisition:.<br>
- Data was made available by Allison Quam(Representative from WAPS District).
+ Public Data was collected by Alison Quam (Representative from WAPS District).
  The Data were made available in different pdf/excel files. Also, the information were       scattered in different files.<br>
 
 2)Data Cleaning and Formatting<br>
@@ -27,17 +31,16 @@ First,most of the pdf files were converted to excel by Tabula(Link:http://tabula
 then, they were cleaned up in proper format and stacked using Python (Pandas).<br>
 
 3)Data Exploration and Visualization <br>
-This part of the project is focused on addressing the questions provided by representative of WAPS(`Allison Quam` ). 
+This part of the project is focused on addressing the questions provided by representative of WAPS(Alison Quam). 
 Tableau was used extensively to explore the data and visualize it.
 Primarily, i focused on answering following questions.<br>
  1. <span style="color:purple">**I was curious about,how does the enrollment and capture rate(rate of new born enrolling to Kindergarten)is changing on WAPS district?.** </span><br>
  
-After few meetings with representative, i knew she was curious about how schools spends on across different programs.<br>
+After few meetings with representative, i realized she was more curious about how schools spends on across different programs.<br>
  
 2.<span style="color:purple">**How the expenditure per average daily membership (count of student daily served in schools)  and spending on various category is changing?.</span>**<br>
 
-#### Acknowledgement
-I would like to thank Allison Quam and Prof.Silas Bergen on helping and guiding me to understand the terms and calculations already done in the reports and Prof.Todd Iverson to help figure out Python code for cleaning the data.
+
 
 The link to the tableau file and the data is <a href = "https://public.tableau.com/views/WinonaAreaPublicSchoolsDataStory/FourthDashboard?:retry=yes&:embed=y&:display_count=yes&:origin=viz_share_link"> <b>here</b> </a>
 
@@ -51,4 +54,7 @@ Now, Visual Story Begins....
 
 ![](/post/WAPS_files/Fourth_Dashboard.png)
 
+`This project actually helped inform the decision makers in local level. Thus, i was able to contribute to something meaningful with my python and tableau skills.`
 
+#### Acknowledgement
+I would like to thank WAPS representative and Prof.Silas Bergen on helping and guiding me to understand the terms and calculations already done in the reports and Prof.Todd Iverson to help figure out Python code for cleaning the data.
