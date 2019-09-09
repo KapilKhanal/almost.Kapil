@@ -1,0 +1,18 @@
+---
+title: "Animation:Internet Usage"
+author: "Kapil Khanal"
+date: 2019-08-24T21:13:14-05:00
+categories: ["Tableau"]
+tags: ["Tableau", "Data Visualization", "Data Science","Animation"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## How internet is eating the world? Internet Usage animation
+Internet Usage is the world bank development indicator. In this project i grabbed the world bank dataset(which is in the link provided below). 
+![](/post/internetusage_files/internetUsage.gif)
+
+Link to the tableau <a href = "https://public.tableau.com/shared/NXKC4HKX7?:display_count=yes&:origin=viz_share_link">worksheet</a>
+
