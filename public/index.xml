@@ -106,23 +106,6 @@
     </item>
     
     <item>
-      <title>Animation:Internet Usage</title>
-      <link>/post/internetusage/</link>
-      <pubDate>Sat, 24 Aug 2019 21:13:14 -0500</pubDate>
-      <guid>/post/internetusage/</guid>
-      <description>
-
-
-&lt;div id=&#34;how-internet-is-eating-the-world-internet-usage-animation&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;How internet is eating the world? Internet Usage animation&lt;/h2&gt;
-&lt;p&gt;Internet Usage is the world bank development indicator. In this project i grabbed the world bank dataset(which is in the link provided below).
-&lt;img src=&#34;/post/internetusage_files/internetUsage.gif&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Link to the tableau &lt;a href = &#34;https://public.tableau.com/shared/NXKC4HKX7?:display_count=yes&amp;:origin=viz_share_link&#34;&gt;worksheet&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Data Dashboard for StockX Contest</title>
       <link>/post/stockx/</link>
       <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
@@ -2122,6 +2105,23 @@ display(y)
 
 &amp;lt;function __main__.showEdges(img, blur, thresholds, blurType, window_size, sigma)&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Animation:Internet Usage</title>
+      <link>/post/internetusage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/internetusage/</guid>
+      <description>
+
+
+&lt;div id=&#34;how-internet-is-eating-the-world-internet-usage-animation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;How internet is eating the world? Internet Usage animation&lt;/h2&gt;
+&lt;p&gt;Internet Usage is the world bank development indicator. In this project i grabbed the world bank dataset(which is in the link provided below).
+&lt;img src=&#34;/post/internetusage_files/internetUsage.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Link to the tableau &lt;a href = &#34;https://public.tableau.com/shared/NXKC4HKX7?:display_count=yes&amp;:origin=viz_share_link&#34;&gt;worksheet&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
