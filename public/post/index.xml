@@ -68,6 +68,21 @@ log of total sales in each states. States like Wyoming have less Sales and also 
     </item>
     
     <item>
+      <title>Fake Data, Valid Models , Better understanding</title>
+      <link>/post/2019-09-10-cdvdv/</link>
+      <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
+      <guid>/post/2019-09-10-cdvdv/</guid>
+      <description>
+
+
+&lt;div id=&#34;can-fake-data-help-understand-the-inference-process-and-model-usage&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Can fake data help understand the inference process and model usage&lt;/h2&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Winona Area Public Schools: Community Contribution</title>
       <link>/post/waps/</link>
       <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
@@ -125,8 +140,8 @@ Primarily, i focused on answering following questions.&lt;br&gt;
 
 &lt;div id=&#34;how-internet-is-eating-the-world-internet-usage-animation&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;How internet is eating the world? Internet Usage animation&lt;/h2&gt;
-&lt;p&gt;Internet Usage is the world bank development indicator. In this project i grabbed the world bank dataset(which is in the link provided below).
-&lt;img src=&#34;/post/internetusage_files/internetUsage.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Internet Usage is the world bank development indicator. In this project i grabbed the world bank dataset(which is in the link provided below).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/internetusage_files/internetUsage.gif&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Link to the tableau &lt;a href = &#34;https://public.tableau.com/shared/NXKC4HKX7?:display_count=yes&amp;:origin=viz_share_link&#34;&gt;worksheet&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>

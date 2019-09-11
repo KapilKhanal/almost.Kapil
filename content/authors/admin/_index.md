@@ -1,10 +1,10 @@
 ---
 authors:
 - admin
-bio: My research interests include Mathematics , Machine learning , Data Systems,Functional Programming. 
+bio: My research interests include Mathematics,Machine learning, Data Systems,Statistical Inference,Functional Programming. 
 education:
   courses:
-  - course: BSc in Mathematics, Data Science and Minor in Computer Science
+  - course: Bsc. in Mathematics, Data Science and Minor in Computer Science
     institution: Winona State University
     year: 2016-2020
 email: "kkhanal16@winona.edu"
@@ -39,7 +39,7 @@ user_groups:
 ---
 
 # Breaking the ice
-Hello, Glad you found this blog. I write about Data,Code and Mathematics. Let's have a conversation. Coffee or Ice Cream on Me ! Let's nerd out with data and machine learning systems.<br>
+Hello, Glad you found this blog. I write about Data,Code and Mathematics. Let's have a conversation. Coffee or Ice Cream on Me !<br>
 I am an undergrad at Winona State University. You can usually find me talking about data , visualization and programming. Other than that, I play soccer , ping-pong and binge watch TV shows.This blog almosts mirror me but *not* completely. 
 
 

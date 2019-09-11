@@ -1,0 +1,18 @@
+---
+title: "Fake Data, Valid Models , Better understanding"
+author: "Kapil Khanal"
+date: 2019-08-21T21:13:14-05:00
+categories: ["Applied Statistics"]
+tags: ["Statistics", "Data Visualization", "Data Science","winona"]
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Can fake data help understand the inference process and model usage
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+
