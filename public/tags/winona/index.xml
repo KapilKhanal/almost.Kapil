@@ -13,21 +13,6 @@
     </image>
     
     <item>
-      <title>Fake Data, Valid Models , Better understanding</title>
-      <link>/post/2019-09-10-cdvdv/</link>
-      <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
-      <guid>/post/2019-09-10-cdvdv/</guid>
-      <description>
-
-
-&lt;div id=&#34;can-fake-data-help-understand-the-inference-process-and-model-usage&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Can fake data help understand the inference process and model usage&lt;/h2&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Winona Area Public Schools: Community Contribution</title>
       <link>/post/waps/</link>
       <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
@@ -71,6 +56,21 @@ Primarily, i focused on answering following questions.&lt;br&gt;
 &lt;h4&gt;Acknowledgement&lt;/h4&gt;
 &lt;p&gt;I would like to thank WAPS representative and Prof.Silas Bergen on helping and guiding me to understand the terms and calculations already done in the reports and Prof.Todd Iverson to help figure out Python code for cleaning the data.&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fake Data, Valid Models , Better Understanding</title>
+      <link>/post/2019-09-10-cdvdv/</link>
+      <pubDate>Sun, 21 Aug 2016 21:13:14 -0500</pubDate>
+      <guid>/post/2019-09-10-cdvdv/</guid>
+      <description>
+
+
+&lt;div id=&#34;can-fake-data-help-understand-the-inference-process-and-model-usage&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Can fake data help understand the inference process and model usage&lt;/h2&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

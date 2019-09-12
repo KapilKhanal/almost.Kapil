@@ -18,6 +18,9 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[design.background]
+ image = "geometry_X.png"  # Name of image in `static/img/`.
+
 [[item]]
   organization = "Winona State University and MinneAnalytics"
   organization_url = ""

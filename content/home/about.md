@@ -12,6 +12,8 @@ title = "A little about me"
 # See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself
 author = "admin"
 
+[design.background]
+ #image = "geometry_X.png"  # Name of image in `static/img/`.
 +++
 # About me
 Hello, Glad you found this blog. I write about Data,Code and Mathematics. Let's have a conversation. Coffee or Ice Cream on Me ! Let's nerd out with data and machine learning systems.

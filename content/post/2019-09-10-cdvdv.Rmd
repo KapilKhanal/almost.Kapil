@@ -1,8 +1,9 @@
 ---
-title: "Fake Data, Valid Models , Better understanding"
+title: "Fake Data, Valid Models , Better Understanding"
 author: "Kapil Khanal"
-date: 2019-08-21T21:13:14-05:00
+date: 2016-08-21T21:13:14-05:00
 categories: ["Applied Statistics"]
+draft: true
 tags: ["Statistics", "Data Visualization", "Data Science","winona"]
 ---
 

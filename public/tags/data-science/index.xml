@@ -68,21 +68,6 @@ log of total sales in each states. States like Wyoming have less Sales and also 
     </item>
     
     <item>
-      <title>Fake Data, Valid Models , Better understanding</title>
-      <link>/post/2019-09-10-cdvdv/</link>
-      <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
-      <guid>/post/2019-09-10-cdvdv/</guid>
-      <description>
-
-
-&lt;div id=&#34;can-fake-data-help-understand-the-inference-process-and-model-usage&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Can fake data help understand the inference process and model usage&lt;/h2&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Winona Area Public Schools: Community Contribution</title>
       <link>/post/waps/</link>
       <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
@@ -178,6 +163,21 @@ t.test(level, mu = 5.4)&lt;/code&gt;&lt;/pre&gt;
 ##  5.659167&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The p-value is greater than 0.05 and confidence interval [5.17 to 6.17]. Which means if 100 people have done this random sampling of beer and have calculated the confidence interval , then the mean[5.4] would have always fall in the confidence interval.&lt;/p&gt;
 &lt;p&gt;Enough with the statistical jargon? Okay let’s enjoy the beer&lt;img src=&#34;/post/Beer_files/giphy.gif&#34; alt=&#34;Cold Beer and Confidence Interval&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fake Data, Valid Models , Better Understanding</title>
+      <link>/post/2019-09-10-cdvdv/</link>
+      <pubDate>Sun, 21 Aug 2016 21:13:14 -0500</pubDate>
+      <guid>/post/2019-09-10-cdvdv/</guid>
+      <description>
+
+
+&lt;div id=&#34;can-fake-data-help-understand-the-inference-process-and-model-usage&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Can fake data help understand the inference process and model usage&lt;/h2&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

@@ -33,11 +33,6 @@
   </url>
   
   <url>
-    <loc>/categories/applied-statistics/</loc>
-    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
@@ -58,27 +53,17 @@
   </url>
   
   <url>
-    <loc>/post/2019-09-10-cdvdv/</loc>
-    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
     <lastmod>2019-08-31T22:21:57-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/statistics/</loc>
+    <loc>/categories/tableau/</loc>
     <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/tableau/</loc>
-    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/tableau/</loc>
     <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
@@ -228,6 +213,11 @@
   </url>
   
   <url>
+    <loc>/tags/statistics/</loc>
+    <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/waterquality/</loc>
     <lastmod>2018-06-23T21:13:14-05:00</lastmod>
   </url>
@@ -270,6 +260,16 @@
   <url>
     <loc>/post/imageprocessing/</loc>
     <lastmod>2019-08-31T22:21:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/applied-statistics/</loc>
+    <lastmod>2016-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2019-09-10-cdvdv/</loc>
+    <lastmod>2016-08-21T21:13:14-05:00</lastmod>
   </url>
   
   <url>
