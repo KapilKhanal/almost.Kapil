@@ -4,7 +4,7 @@ author: "Kapil Khanal"
 date: 2016-08-21T21:13:14-05:00
 categories: ["Applied Statistics"]
 draft: true
-tags: ["Statistics", "Data Visualization", "Data Science","winona"]
+tags: ["Statistics", "Data", "Data Science","Fake Data"]
 ---
 
 
@@ -12,8 +12,14 @@ tags: ["Statistics", "Data Visualization", "Data Science","winona"]
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Can fake data help understand the inference process and model usage
+## Can fake data help understand the inference process and model usage?
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Data science and statistics courses deal with either already famous datasets like iris dataset or Iowa home saleprice. These datasets have their own place. They are generated in real life. After all, statistics is about dealing with real life in a more formal way. But, i don't think these datasets necessary prepare students on working with the real life data. This case is similar to Applied Mathematics modeling. 
+
+`No one throws the differential equations that occur in nature right away at students when beginning to learn about differential equations` 
+<br>
+Almost all of mathematics concepts are playfully introduced with problems that we know answers of, that we understand all the nots and bolts.One can actually see the progression of the complexity of the problems and solve them one by one. When some problems seems to be unsolvable then there is a transition to a newer class of concepts. 
+
+Real life data by definition we don't understand fully. One can interpret it on different ways. A lot of people argue that neural networks are awesome and can beat any other models. Maybe this is true because the universe of real life dataset a lot of people learn with are best modelled by neural networks. Instead, if people had learned to train different models on each fake datasets designed to learn the nuts and bolts of the models, they would have seen why sometimes a different model is worth more. 
 
 

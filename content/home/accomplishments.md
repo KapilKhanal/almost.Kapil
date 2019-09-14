@@ -19,7 +19,7 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [design.background]
- image = "geometry_X.png"  # Name of image in `static/img/`.
+ #image = ""  # Name of image in `static/img/`.
 
 [[item]]
   organization = "Winona State University and MinneAnalytics"

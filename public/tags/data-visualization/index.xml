@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Visualization | Transponster</title>
+    <title>Data Visualization | 𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛</title>
     <link>/tags/data-visualization/</link>
       <atom:link href="/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     <description>Data Visualization</description>
@@ -1158,21 +1158,6 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
 Figure 1: Classification of Bacteria
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fake Data, Valid Models , Better Understanding</title>
-      <link>/post/2019-09-10-cdvdv/</link>
-      <pubDate>Sun, 21 Aug 2016 21:13:14 -0500</pubDate>
-      <guid>/post/2019-09-10-cdvdv/</guid>
-      <description>
-
-
-&lt;div id=&#34;can-fake-data-help-understand-the-inference-process-and-model-usage&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Can fake data help understand the inference process and model usage&lt;/h2&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

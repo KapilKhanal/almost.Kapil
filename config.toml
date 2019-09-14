@@ -1,7 +1,8 @@
 baseurl = "https://almostkapil.netlify.com/"
-title = "Transponster"
+title  =  "𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛"
 copyright = "&copy; 2018 Kapil Khanal"
 theme = "hugo-academic"
+font = "playfair"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]

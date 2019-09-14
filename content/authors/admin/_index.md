@@ -39,7 +39,7 @@ user_groups:
 ---
 
 # Breaking the ice
-Hello, Glad you found this blog. I write about Data,Code and Mathematics. Let's have a conversation. Coffee or Ice Cream on Me !<br>
-I am an undergrad at Winona State University. You can usually find me talking about data , visualization and programming. Other than that, I play soccer , ping-pong and binge watch TV shows.This blog almosts mirror me but *not* completely. 
+Hello, glad you found this blog. I write about Data,Code and Mathematics. Let's have a conversation. :coffee: or :beers: on me :hand: !<br>
+I am an undergrad at Winona State University. You can usually find me talking about data , visualization and programming. Other than that, I play :soccer: , ping-pong, hike and binge watch TV shows.This blog almosts mirror me but *not* completely. 
 
 

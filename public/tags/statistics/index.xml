@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statistics | Transponster</title>
+    <title>Statistics | 𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛</title>
     <link>/tags/statistics/</link>
       <atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Statistics</description>
@@ -55,8 +55,12 @@ The link of the code: &lt;a href=&#34;https://github.com/KapilKhanal/DSCI430/blo
 
 
 &lt;div id=&#34;can-fake-data-help-understand-the-inference-process-and-model-usage&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Can fake data help understand the inference process and model usage&lt;/h2&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Can fake data help understand the inference process and model usage?&lt;/h2&gt;
+&lt;p&gt;Data science and statistics courses deal with either already famous datasets like iris dataset or Iowa home saleprice. These datasets have their own place. They are generated in real life. After all, statistics is about dealing with real life in a more formal way. But, i don’t think these datasets necessary prepare students on working with the real life data. This case is similar to Applied Mathematics modeling.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;No one throws the differential equations that occur in nature right away at students when beginning to learn about differential equations&lt;/code&gt;
+&lt;br&gt;
+Almost all of mathematics concepts are playfully introduced with problems that we know answers of, that we understand all the nots and bolts.One can actually see the progression of the complexity of the problems and solve them one by one. When some problems seems to be unsolvable then there is a transition to a newer class of concepts.&lt;/p&gt;
+&lt;p&gt;Real life data by definition we don’t understand fully. One can interpret it on different ways. A lot of people argue that neural networks are awesome and can beat any other models. Maybe this is true because the universe of real life dataset a lot of people learn with are best modelled by neural networks. Instead, if people had learned to train different models on each fake datasets designed to learn the nuts and bolts of the models, they would have seen why sometimes a different model is worth more.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
