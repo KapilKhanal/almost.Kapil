@@ -5,12 +5,76 @@
     <link>/tags/ggplot2/</link>
       <atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
     <description>ggplot2</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Wed, 24 Jul 2019 21:13:14 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Wed, 21 Aug 2019 21:13:14 -0500</lastBuildDate>
     <image>
       <url>/img/aph-salt-spring-zoom.jpg</url>
       <title>ggplot2</title>
       <link>/tags/ggplot2/</link>
     </image>
+    
+    <item>
+      <title>CMU Sport Analytics Projects Slideshows</title>
+      <link>/post/baseball/</link>
+      <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
+      <guid>/post/baseball/</guid>
+      <description>
+
+
+&lt;div id=&#34;my-cmsac-experience&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;My CMSAC Experience&lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Jeremy Sanchez &lt;a href=&#34;https://twitter.com/_jsanchez1?ref_src=twsrc%5Etfw&#34;&gt;@_jsanchez1&lt;/a&gt;, Nathan Moss &lt;a href=&#34;https://twitter.com/CMU_Stats?ref_src=twsrc%5Etfw&#34;&gt;@CMU_Stats&lt;/a&gt;, and Kapil Khanal @Kapil71001628 working on soccer with &lt;a href=&#34;https://twitter.com/kpelechrinis?ref_src=twsrc%5Etfw&#34;&gt;@kpelechrinis&lt;/a&gt; &lt;a href=&#34;https://t.co/Ij2eFiJ8eH&#34;&gt;pic.twitter.com/Ij2eFiJ8eH&lt;/a&gt;&lt;/p&gt;&amp;mdash; CMU Stats &amp;amp; DS (@CMU_Stats) &lt;a href=&#34;https://twitter.com/CMU_Stats/status/1154857646429749248?ref_src=twsrc%5Etfw&#34;&gt;July 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/post/Baseball_files/CMSAC.jpeg&#34; alt=&#34;Presenting our Final Project&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Presenting our Final Project&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;my-first-project-at-cmu-statistics-sport-analytics-camp&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;My First Project at CMU Statistics :Sport Analytics Camp&lt;/h3&gt;
+&lt;p&gt;Here is the schedule of this summer camp.&lt;/p&gt;
+&lt;p&gt;The first week has been a good review of basic dplyr syntax and ggplot2 philosophy. I like how Professors and TA are always there for us. Small data manipulation problems or points being masked in scatterplots, i ran into all sort of problems. &lt;br&gt;
+These are a practice projects before we actually work with our choice of research projects.&lt;/p&gt;
+&lt;p&gt;Here is the schedule of this summer camp.
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Last day of &lt;a href=&#34;https://twitter.com/hashtag/CMSACamp?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#CMSACamp&lt;/a&gt;! Jam-packed summer full of &lt;a href=&#34;https://twitter.com/hashtag/datascience?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#datascience&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/hashtag/sportsanalytics?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#sportsanalytics&lt;/a&gt;, speakers, tours, amazing partners &lt;a href=&#34;https://twitter.com/TruMediaSports?ref_src=twsrc%5Etfw&#34;&gt;@TruMediaSports&lt;/a&gt; &lt;a href=&#34;https://twitter.com/albert_larcada?ref_src=twsrc%5Etfw&#34;&gt;@albert_larcada&lt;/a&gt; &lt;a href=&#34;https://twitter.com/stat_sam?ref_src=twsrc%5Etfw&#34;&gt;@stat_sam&lt;/a&gt; &lt;a href=&#34;https://twitter.com/penguins?ref_src=twsrc%5Etfw&#34;&gt;@penguins&lt;/a&gt; &lt;a href=&#34;https://twitter.com/kpelechrinis?ref_src=twsrc%5Etfw&#34;&gt;@kpelechrinis&lt;/a&gt;  &lt;a href=&#34;https://twitter.com/Stat_Ron?ref_src=twsrc%5Etfw&#34;&gt;@Stat_Ron&lt;/a&gt; &lt;a href=&#34;https://twitter.com/NFL?ref_src=twsrc%5Etfw&#34;&gt;@NFL&lt;/a&gt; &lt;a href=&#34;https://twitter.com/albertbayes?ref_src=twsrc%5Etfw&#34;&gt;@albertbayes&lt;/a&gt; &lt;a href=&#34;https://twitter.com/bklynmaks?ref_src=twsrc%5Etfw&#34;&gt;@bklynmaks&lt;/a&gt; &lt;a href=&#34;https://twitter.com/ATLHawks?ref_src=twsrc%5Etfw&#34;&gt;@ATLHawks&lt;/a&gt; &lt;a href=&#34;https://twitter.com/acthomasca?ref_src=twsrc%5Etfw&#34;&gt;@acthomasca&lt;/a&gt; &lt;a href=&#34;https://twitter.com/sarah_malle?ref_src=twsrc%5Etfw&#34;&gt;@sarah_malle&lt;/a&gt; &lt;a href=&#34;https://twitter.com/nflscrapR?ref_src=twsrc%5Etfw&#34;&gt;@nflscrapR&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Pirates?ref_src=twsrc%5Etfw&#34;&gt;@Pirates&lt;/a&gt; &lt;a href=&#34;https://t.co/feG2cZnGQR&#34;&gt;pic.twitter.com/feG2cZnGQR&lt;/a&gt;&lt;/p&gt;&amp;mdash; CMU Stats &amp;amp; DS (@CMU_Stats) &lt;a href=&#34;https://twitter.com/CMU_Stats/status/1154736616646283264?ref_src=twsrc%5Etfw&#34;&gt;July 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;div id=&#34;project1-baseball&#34; class=&#34;section level6&#34;&gt;
+&lt;h6&gt;Project1: Baseball&lt;/h6&gt;
+&lt;p&gt;For this project, we looked into how similar the top 5 hitters are in baseball.Below is the slide we presented at the camp.
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vRe0m6fqFga0-BulFHn6_wXG7qKkp1G7Y8zpTAS6nrDmH69k_574IjHaGK_MrQxagGN_mQtNBF33uvo/embed?start=true&amp;loop=true&amp;delayms=2000&#34; frameborder=&#34;0&#34; width=&#34;860&#34; height=&#34;469&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Similarly for project 2 , we did another project using tennis dataset.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;project-2-tennis&#34; class=&#34;section level6&#34;&gt;
+&lt;h6&gt;Project 2: Tennis&lt;/h6&gt;
+&lt;p&gt;&lt;b&gt;What factors are best at predicting point ratio for a match during a Grand Slam?
+&lt;/b&gt;
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vTA379JFEoMzgqXndoeEaU3ZIC0P1P8f0d8dna7Je4QsnKWGDKW6-sTWIU5FTCvPAEynta1l1NWI1Na/embed?start=true&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;860&#34; height=&#34;469&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;project-3simulating-office-environment-in-analytics&#34; class=&#34;section level6&#34;&gt;
+&lt;h6&gt;Project 3:Simulating Office Environment in Analytics &lt;br&gt;&lt;/h6&gt;
+&lt;p&gt;This is a non-technical project but most fun project. Our class of 16 students were partitioned into 4 analytics department for a hypothetical team. There is a lot of romour on players market, where some players are up for grab who are extremely essential for our team. Also, we have to let go some players. The crazy part of this project is that time is ticking. Our boss changes her decision every few minutes as per the changes inmarket. We have to come up with a some numbers to back up some decisions we are about to recommend.&lt;/p&gt;
+&lt;p&gt;Below is the slide we prepared within 10 minutes with so many factora being changed while we were working on it.
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vQnqAWxyL5W47Sd0FPRzSNdeWEq9uXE2T_3S_enY2YUNgIIhiJvFTbrA9tDmVztZtENwd9Rv3aT6QBV/embed?start=true&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;This project shed some light on the life of working data scientists and data analysts. It’s not always about fancy graphs or complicated tongue twisting models. I learned that we start with the problem we have, collect necessary data, make new metrics as per problem, graph problems and proposed solutions so that intuitive to all concerned parties and then use models to test our hypothesis and take decision.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;project-3&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Project 3:&lt;/h3&gt;
+&lt;p&gt;This is the final project i worked on for the half of this summer camp. We were presented a lot of research projects. I chose this because soccer has been very interesting for me from my childhood. I played soccer in my high school extensively and it still fascinates me with all the complexity involved from Math ,Statistical and data point of view.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/post/Baseball_files/kapilcmu.jpeg&#34; alt=&#34;Presenting to class mates before poster presentation&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Presenting to class mates before poster presentation&lt;/p&gt;
+&lt;/div&gt;
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vSPyzrr_JI_dh-KzJbEnrUsKvf-BAPQH7VfHUZ0VvTFTCl6TlA422WfcCDFvhlJozjRZE7B_Btkghf4/embed?start=true&amp;amp;loop=true&amp;amp;delayms=2000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Like i tweeted, I am extremely grateful for CMU Stats for letting me experience life as a data scientists.
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The best 8 weeks. I got to learn so many things and enjoy Pittsburgh. The spirit at &lt;a href=&#34;https://twitter.com/CMU_Stats?ref_src=twsrc%5Etfw&#34;&gt;@CMU_Stats&lt;/a&gt;  is amazing, like a Stat-Disney land. Thank you for everything especially all those free foods and tickets to game and Kennywood. &lt;a href=&#34;https://twitter.com/hashtag/CMSACamp?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#CMSACamp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kapil.Khanal (@almost_kapil) &lt;a href=&#34;https://twitter.com/almost_kapil/status/1154867446177763328?ref_src=twsrc%5Etfw&#34;&gt;July 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Sankey diagrams for Bacteria and antibiotics</title>

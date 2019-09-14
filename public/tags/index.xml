@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Baseball</title>
+      <link>/tags/baseball/</link>
+      <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
+      <guid>/tags/baseball/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Science</title>
       <link>/tags/data-science/</link>
       <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
@@ -25,6 +33,22 @@
       <link>/tags/data-visualization/</link>
       <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
       <guid>/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sport Analytics</title>
+      <link>/tags/sport-analytics/</link>
+      <pubDate>Wed, 21 Aug 2019 21:13:14 -0500</pubDate>
+      <guid>/tags/sport-analytics/</guid>
       <description></description>
     </item>
     
@@ -61,22 +85,6 @@
     </item>
     
     <item>
-      <title>ggplot2</title>
-      <link>/tags/ggplot2/</link>
-      <pubDate>Wed, 24 Jul 2019 21:13:14 -0500</pubDate>
-      <guid>/tags/ggplot2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Applied statistics</title>
-      <link>/tags/applied-statistics/</link>
-      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
-      <guid>/tags/applied-statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Data Product</title>
       <link>/tags/data-product/</link>
       <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
@@ -97,14 +105,6 @@
       <link>/tags/software-engineering/</link>
       <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
       <guid>/tags/software-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>T-test</title>
-      <link>/tags/t-test/</link>
-      <pubDate>Tue, 23 Jul 2019 21:13:14 -0500</pubDate>
-      <guid>/tags/t-test/</guid>
       <description></description>
     </item>
     
@@ -137,6 +137,22 @@
       <link>/tags/waterquality/</link>
       <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
       <guid>/tags/waterquality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Applied Statistics</title>
+      <link>/tags/applied-statistics/</link>
+      <pubDate>Wed, 23 May 2018 21:13:14 -0500</pubDate>
+      <guid>/tags/applied-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>T-test</title>
+      <link>/tags/t-test/</link>
+      <pubDate>Wed, 23 May 2018 21:13:14 -0500</pubDate>
+      <guid>/tags/t-test/</guid>
       <description></description>
     </item>
     

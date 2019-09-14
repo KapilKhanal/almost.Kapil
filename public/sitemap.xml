@@ -33,7 +33,17 @@
   </url>
   
   <url>
+    <loc>/tags/baseball/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/baseball/</loc>
     <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
@@ -53,8 +63,23 @@
   </url>
   
   <url>
+    <loc>/categories/ggplot2/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ggplot2/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
     <lastmod>2019-08-31T22:21:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sport-analytics/</loc>
+    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -98,16 +123,6 @@
   </url>
   
   <url>
-    <loc>/tags/ggplot2/</loc>
-    <lastmod>2019-07-24T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/ggplot2/</loc>
-    <lastmod>2019-07-24T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/r/</loc>
     <lastmod>2019-07-24T21:13:14-05:00</lastmod>
   </url>
@@ -115,11 +130,6 @@
   <url>
     <loc>/post/sankey/</loc>
     <lastmod>2019-07-24T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/applied-statistics/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -139,16 +149,6 @@
   
   <url>
     <loc>/tags/software-engineering/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/t-test/</loc>
-    <lastmod>2019-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/beer/</loc>
     <lastmod>2019-07-23T21:13:14-05:00</lastmod>
   </url>
   
@@ -225,6 +225,21 @@
   <url>
     <loc>/post/lake_data/</loc>
     <lastmod>2018-06-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/applied-statistics/</loc>
+    <lastmod>2018-05-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/t-test/</loc>
+    <lastmod>2018-05-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/beer/</loc>
+    <lastmod>2018-05-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
