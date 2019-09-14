@@ -47,13 +47,15 @@ This project shed some light on the life of working data scientists and data ana
 
 
 ### Project 3:
-This is the final project i worked on for the half of this summer camp. We were presented a lot of research projects. I chose this because soccer has been very interesting for me from my childhood. I played soccer in my high school extensively and it still fascinates me with all the complexity involved from Math ,Statistical and data point of view.
+This is the final project i worked on for the half of this summer camp. We This is actually a work in progress. We will be changing a lot of things(i guess that is research, `change until you no longer find a justification to change`) 
+
+I chose this because soccer has been very interesting for me from my childhood. I played soccer in my high school extensively and it still fascinates me with all the complexity involved from Math ,Statistical and data point of view.
 
 
 
 ![Presenting to class mates before poster presentation](/post/Baseball_files/kapilcmu.jpeg)
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSPyzrr_JI_dh-KzJbEnrUsKvf-BAPQH7VfHUZ0VvTFTCl6TlA422WfcCDFvhlJozjRZE7B_Btkghf4/embed?start=true&loop=true&delayms=2000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 Like i tweeted, I am extremely grateful for CMU Stats for letting me experience life as a data scientists. 
 ```{r echo=FALSE}
