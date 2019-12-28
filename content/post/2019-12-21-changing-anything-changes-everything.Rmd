@@ -19,7 +19,6 @@ image:
 projects: []
 ---
 
-
 ![](/post/2019-12-21-changing-anything-changes-everything_files/Drawing.png)
 
 Most of the policy that got enacted has its own reasons. Policymakers and policy analyst have debated policies for years. These policies impact people's lives but very few people had a direct say on how policy was proposed, analyzed and enacted. Democracy thrives on public opinion. Ironically, nowadays the very foundation of democracy is shaken because of public opinion. And it turns out, factual understanding of world also is getting blurry day by day. When people do not own the research fundings or are not in the policy debating loop, they disagree with policies even though it benefits them. 
