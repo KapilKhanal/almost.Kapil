@@ -20,6 +20,11 @@ Data science and statistics courses deal with either already famous datasets lik
 <br>
 Almost all of mathematics concepts are playfully introduced with problems that we know answers of, that we understand all the nots and bolts.One can actually see the progression of the complexity of the problems and solve them one by one. When some problems seems to be unsolvable then there is a transition to a newer class of concepts. 
 
-Real life data by definition we don't understand fully. One can interpret it on different ways. A lot of people argue that neural networks are awesome and can beat any other models. Maybe this is true because the universe of real life dataset a lot of people learn with are best modelled by neural networks. Instead, if people had learned to train different models on each fake datasets designed to learn the nuts and bolts of the models, they would have seen why sometimes a different model is worth more. 
+Real life data by definition we don't understand fully. One can interpret it on different ways. A lot of people argue that neural networks are awesome and can beat any other models. Maybe this is true because the universe of real life dataset a lot of people learn with are best modelled by neural networks. <br>
+Instead, if people had learned to train different models on each fake datasets designed to learn the nuts and bolts of the models, they would have seen why sometimes a different model is worth more. <br>
+
+I think this way of looking at the dataset will give intution about the geometry of dataset and mechanics of the model.
+
+I found this awesome website where you can draw and download the dataset
 
 

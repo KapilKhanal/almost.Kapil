@@ -4,6 +4,8 @@ author: "Kapil Khanal"
 date: 2018-05-23T21:13:14-05:00
 categories: ["R"]
 tags: ["T-test", "Applied statistics", "Data Science"]
+output:
+  tufte:tufte_html:default 
 ---
 
 ```{r setup, include=FALSE}

@@ -26,7 +26,10 @@
 &lt;p&gt;&lt;code&gt;No one throws the differential equations that occur in nature right away at students when beginning to learn about differential equations&lt;/code&gt;
 &lt;br&gt;
 Almost all of mathematics concepts are playfully introduced with problems that we know answers of, that we understand all the nots and bolts.One can actually see the progression of the complexity of the problems and solve them one by one. When some problems seems to be unsolvable then there is a transition to a newer class of concepts.&lt;/p&gt;
-&lt;p&gt;Real life data by definition we don’t understand fully. One can interpret it on different ways. A lot of people argue that neural networks are awesome and can beat any other models. Maybe this is true because the universe of real life dataset a lot of people learn with are best modelled by neural networks. Instead, if people had learned to train different models on each fake datasets designed to learn the nuts and bolts of the models, they would have seen why sometimes a different model is worth more.&lt;/p&gt;
+&lt;p&gt;Real life data by definition we don’t understand fully. One can interpret it on different ways. A lot of people argue that neural networks are awesome and can beat any other models. Maybe this is true because the universe of real life dataset a lot of people learn with are best modelled by neural networks. &lt;br&gt;
+Instead, if people had learned to train different models on each fake datasets designed to learn the nuts and bolts of the models, they would have seen why sometimes a different model is worth more. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;I think this way of looking at the dataset will give intution about the geometry of dataset and mechanics of the model.&lt;/p&gt;
+&lt;p&gt;I found this awesome website where you can draw and download the dataset&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
