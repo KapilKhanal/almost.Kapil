@@ -16,7 +16,7 @@ author = "admin"
  #image = "geometry_X.png"  # Name of image in `static/img/`.
 +++
 # About me
-Hello, Glad you found this blog. I write about Data,Code and Mathematics. Let's have a conversation. :coffee: or : beers : on Me ! Let's nerd out with data and machine learning systems.
+Hello, glad you found this blog. I write about Data,Code and Mathematics. Let's have a conversation. :coffee: or : beers : on Me ! Let's nerd out with data and machine learning systems.
 
 I am an undergrad at Winona State University. You can usually find me talking about data , visualization and programming. Other than that, I play soccer , ping-pong and binge watch TV shows.This blog almosts mirror me but not completely.
 
