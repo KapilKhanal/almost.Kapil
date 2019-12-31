@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: My research interests include Mathematics,Machine learning, Data Systems,Statistical Inference,Functional Programming. 
+bio: My research interests include Applied mathematics, Machine learning, Data Systems,Statistical Inference,Functional Programming, Computational Social Science
 education:
   courses:
   - course: Bsc. in Mathematics, Data Science and Minor in Computer Science
@@ -11,9 +11,9 @@ email: "kkhanal16@winona.edu"
 interests:
 - Statistics
 - Machine learning
-- Scientific Computing and Programming
+- Data for social good
 - Mathematics
-
+- Programming
 name: Kapil %>% Khanal()
 organizations:
 - name: Winona State University
@@ -39,10 +39,10 @@ user_groups:
 ---
 
 # Breaking the ice
-Hello, glad you found this blog. I write about Data,Code and Mathematics. Let's have a conversation.  :coffee: or :beers: on me :hand: !  <br>
+Hello, glad you found this blog. I write about data,code,mathematics and policy/social issues realted data analysis. Let's have a conversation.  :coffee: or :beers: on me :hand: !  <br>
 
 I am an undergrad at Winona State University,Winona. A <a href = "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwie2eCfhtHkAhVwJTQIHeG6DxUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkylekotajarvi%2F6894501926&psig=AOvVaw0QuEJbIhL4UgFjyO3wqzDH&ust=1568575761020272">beautiful place</a> in midwest. 
 
-You can usually find me talking about data visualization,statistics, programming and machine learning. Other than that, I play :soccer: , ping-pong, hike and binge watch TV shows.This blog almosts mirror me but *not* completely. 
+You can usually find me talking about data visualization,statistics, programming, machine learning and Data Science for social good. Other than that, I play :soccer: , ping-pong, hike and binge watch TV shows.This blog almosts mirror me but *not* completely. 
 
 
