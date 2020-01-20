@@ -151,9 +151,9 @@ defaultContentLanguageInSubdir = false
     link = "https://public.tableau.com/profile/kapil.khanal#!/"
     
   [[params.social]]
-    icon = "researchgate"
+    icon = "sourcerer"
     icon_pack = "ai"
-    link = ""
+    link = "https://sourcerer.io/kapilkhanal"
     
   [[params.social]]
     icon = "linkedin"
@@ -180,10 +180,10 @@ defaultContentLanguageInSubdir = false
   url = "#posts"
   weight = 3
 
-#[[menu.main]]
- # name = "Talks & Workshops"
- # url = "#talks"
- # weight = 4
+[[menu.main]]
+  name = "Github Sourcerer Dashboard"
+  url = "https://sourcerer.io/kapilkhanal"
+  weight = 4
 
 [[menu.main]]
   name = "Teaching"

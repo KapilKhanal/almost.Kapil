@@ -43,6 +43,9 @@ Hello, glad you found this blog. I write about data,code,mathematics and policy/
 
 I am an undergrad at Winona State University,Winona. A <a href = "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwie2eCfhtHkAhVwJTQIHeG6DxUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkylekotajarvi%2F6894501926&psig=AOvVaw0QuEJbIhL4UgFjyO3wqzDH&ust=1568575761020272">beautiful place</a> in midwest. 
 
-You can usually find me talking about data visualization,statistics, programming, machine learning and Data Science for social good. Other than that, I play :soccer: , ping-pong, hike and binge watch TV shows.This blog almosts mirror me but *not* completely. 
+You can usually find me talking about data visualization,statistics, programming, machine learning and Data Science for social good. Other than that, I play :soccer: , ping-pong, hike and binge watch TV shows.This blog almosts mirror me but *not* completely. Sometime, I ponder whether or not the world is a collection of dataset with a very complicated, time dependent schema.
+
+If you want to have a glance at my coding profile in github. Here is a dashboard at <a href="https://sourcerer.io/kapilkhanal">**Sourcerer**</a>
+
 
 

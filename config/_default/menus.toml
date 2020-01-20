@@ -33,3 +33,8 @@
     name = "CV"
     url = "files/cv.pdf"
     weight = 70
+
+[[main]]
+  name = "Dashboard(Sourcerer)"
+  url = "https://sourcerer.io/kapilkhanal"
+  weight = 50
