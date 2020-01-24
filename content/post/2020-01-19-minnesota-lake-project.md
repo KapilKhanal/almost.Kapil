@@ -33,10 +33,13 @@ Thinking each service as a different code repoisitory. We will have three differ
 <li>ML api: Flask Application to serve the model by downloading the model from PyPi/S3 and exposing a API to get the data and return the prediction</li>
 <li>Another Flask/Front-end framework to get the json from API and populate the dashboard with plots and predictions</li>
 
+While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don't human do that? 
+
 All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.
 
 
-Please click here for <a href = "http://lakedashboard.team/">lake Dashboard</a>
+
+If you like to see the end product, this link will take you there <a href = "http://lakedashboard.team/">lake Dashboard</a>
 
 
 

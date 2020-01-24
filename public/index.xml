@@ -129,9 +129,11 @@ Source: Reactive machine learning book&lt;/p&gt;
 &lt;li&gt;ML api: Flask Application to serve the model by downloading the model from PyPi/S3 and exposing a API to get the data and return the prediction&lt;/li&gt;
 &lt;li&gt;Another Flask/Front-end framework to get the json from API and populate the dashboard with plots and predictions&lt;/li&gt;&lt;/p&gt;
 
+&lt;p&gt;While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don&amp;rsquo;t human do that?&lt;/p&gt;
+
 &lt;p&gt;All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.&lt;/p&gt;
 
-&lt;p&gt;Please click here for &lt;a href = &#34;http://lakedashboard.team/&#34;&gt;lake Dashboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you like to see the end product, this link will take you there &lt;a href = &#34;http://lakedashboard.team/&#34;&gt;lake Dashboard&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
