@@ -37,29 +37,29 @@ While learning about this, I came across the idea of DataOps and MLOps. I think 
 ## Basic software engineering skills and gotchas:
 What packages do your application need? ***requirements.txt***
 
-Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.
-Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself
-Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. 
-Use venv (virtual environments). You don't want conflicting libraries quarelling with each other.
+Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.<br>
+Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself <br>
+Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. <br>
+Use venv (virtual environments). You don't want conflicting libraries quarelling with each other.<br>
 
 set.seed() while training, to increase reproducibility.Use the same seed across different models.
-Think of logging: what do you want to monitor? import logging in Python. 
-Think of how you are going to share your final model(pickel file? parametrized formula?)
-A Docker image, ready to be used, is a good choice. 
+Think of logging: what do you want to monitor? import logging in Python. <br>
+Think of how you are going to share your final model(pickel file? parametrized formula?) <br>
+A Docker image, ready to be used, is a good choice. <br>
 
 Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end
+<br>
+Your tools should have clear input parameters 
+e.g., Path to the repository <br>
+The command line tool should not work if input parameters are wrong <br>
+Make *config* parameters very clear <br>
+A config.py file where people can tune specific configs <br>
+If you use environment variables, document them clearly <br>
+Do not use hard coded paths <br>
 
-Your tools should have clear input parameters
-e.g., Path to the repository
-The command line tool should not work if input parameters are wrong
-Make *config* parameters very clear
-A config.py file where people can tune specific configs
-If you use environment variables, document them clearly
-Do not use hard coded paths
-
-During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks)
-Understand the importance of the data you are passing to your model
-Pay attention to “garbage-in garbage-out”
+During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks) <br>
+Understand the importance of the data you are passing to your model <br>
+Pay attention to “garbage-in garbage-out” <br>
 
 
 All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.

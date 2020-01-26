@@ -42,29 +42,29 @@ Source: Reactive machine learning book&lt;/p&gt;
 
 &lt;p&gt;What packages do your application need? &lt;strong&gt;&lt;em&gt;requirements.txt&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.
-Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself
-Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value.
-Use venv (virtual environments). You don&amp;rsquo;t want conflicting libraries quarelling with each other.&lt;/p&gt;
+&lt;p&gt;Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.&lt;br&gt;
+Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself &lt;br&gt;
+Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. &lt;br&gt;
+Use venv (virtual environments). You don&amp;rsquo;t want conflicting libraries quarelling with each other.&lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;set.seed() while training, to increase reproducibility.Use the same seed across different models.
-Think of logging: what do you want to monitor? import logging in Python.
-Think of how you are going to share your final model(pickel file? parametrized formula?)
-A Docker image, ready to be used, is a good choice.&lt;/p&gt;
+Think of logging: what do you want to monitor? import logging in Python. &lt;br&gt;
+Think of how you are going to share your final model(pickel file? parametrized formula?) &lt;br&gt;
+A Docker image, ready to be used, is a good choice. &lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end&lt;/p&gt;
+&lt;p&gt;Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end
+&lt;br&gt;
+Your tools should have clear input parameters
+e.g., Path to the repository &lt;br&gt;
+The command line tool should not work if input parameters are wrong &lt;br&gt;
+Make &lt;em&gt;config&lt;/em&gt; parameters very clear &lt;br&gt;
+A config.py file where people can tune specific configs &lt;br&gt;
+If you use environment variables, document them clearly &lt;br&gt;
+Do not use hard coded paths &lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;Your tools should have clear input parameters
-e.g., Path to the repository
-The command line tool should not work if input parameters are wrong
-Make &lt;em&gt;config&lt;/em&gt; parameters very clear
-A config.py file where people can tune specific configs
-If you use environment variables, document them clearly
-Do not use hard coded paths&lt;/p&gt;
-
-&lt;p&gt;During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks)
-Understand the importance of the data you are passing to your model
-Pay attention to “garbage-in garbage-out”&lt;/p&gt;
+&lt;p&gt;During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks) &lt;br&gt;
+Understand the importance of the data you are passing to your model &lt;br&gt;
+Pay attention to “garbage-in garbage-out” &lt;br&gt;&lt;/p&gt;
 
 &lt;p&gt;All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.&lt;/p&gt;
 
