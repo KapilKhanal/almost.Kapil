@@ -36,11 +36,30 @@ Source: Reactive machine learning book&lt;/p&gt;
 &lt;li&gt;ML api: Flask Application to serve the model by downloading the model from PyPi/S3 and exposing a API to get the data and return the prediction&lt;/li&gt;
 &lt;li&gt;Another Flask/Front-end framework to get the json from API and populate the dashboard with plots and predictions&lt;/li&gt;&lt;/p&gt;
 
-&lt;p&gt;While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don&amp;rsquo;t human do that?&lt;/p&gt;
+&lt;p&gt;While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don&amp;rsquo;t human do that?
+Basic software engineering skills and gotchas:
+What packages do your application need? *** requirements.txt ***&lt;/p&gt;
+
+&lt;p&gt;Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.
+Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself
+Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value.
+Use venv (virtual environments). You don&amp;rsquo;t want conflicting libraries quarelling with each other.&lt;/p&gt;
+
+&lt;p&gt;set.seed() while training, to increase reproducibility.Use the same seed across different models.
+Think of logging: what do you want to monitor? import logging in Python.
+Think of how you are going to share your final model(pickel file? parametrized formula?)
+A Docker image, ready to be used, is a good choice.&lt;/p&gt;
+
+&lt;p&gt;During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks)
+Understand the importance of the data you are passing to your model
+Pay attention to “garbage-in garbage-out”&lt;/p&gt;
 
 &lt;p&gt;All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.&lt;/p&gt;
 
 &lt;p&gt;If you like to see the end product, this link will take you there &lt;a href = &#34;http://lakedashboard.team/&#34;&gt;lake Dashboard&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;References:
+&lt;a href=&#34;http://gousios.org/courses/ml4se/building-your-ml-pipeline.html&#34; target=&#34;_blank&#34;&gt;http://gousios.org/courses/ml4se/building-your-ml-pipeline.html&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -34,12 +34,32 @@ Thinking each service as a different code repoisitory. We will have three differ
 <li>Another Flask/Front-end framework to get the json from API and populate the dashboard with plots and predictions</li>
 
 While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don't human do that? 
+Basic software engineering skills and gotchas:
+What packages do your application need? *** requirements.txt ***
+
+Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.
+Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself
+Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. 
+Use venv (virtual environments). You don't want conflicting libraries quarelling with each other.
+
+set.seed() while training, to increase reproducibility.Use the same seed across different models.
+Think of logging: what do you want to monitor? import logging in Python. 
+Think of how you are going to share your final model(pickel file? parametrized formula?)
+A Docker image, ready to be used, is a good choice. 
+
+During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks)
+Understand the importance of the data you are passing to your model
+Pay attention to “garbage-in garbage-out”
+
 
 All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.
 
 
 
 If you like to see the end product, this link will take you there <a href = "http://lakedashboard.team/">lake Dashboard</a>
+
+References:
+http://gousios.org/courses/ml4se/building-your-ml-pipeline.html
 
 
 
