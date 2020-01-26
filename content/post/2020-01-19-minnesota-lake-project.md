@@ -34,8 +34,8 @@ Thinking each service as a different code repoisitory. We will have three differ
 <li>Another Flask/Front-end framework to get the json from API and populate the dashboard with plots and predictions</li>
 
 While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don't human do that? 
-Basic software engineering skills and gotchas:
-What packages do your application need? *** requirements.txt ***
+## Basic software engineering skills and gotchas:
+What packages do your application need? ***requirements.txt***
 
 Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.
 Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself
@@ -46,6 +46,16 @@ set.seed() while training, to increase reproducibility.Use the same seed across 
 Think of logging: what do you want to monitor? import logging in Python. 
 Think of how you are going to share your final model(pickel file? parametrized formula?)
 A Docker image, ready to be used, is a good choice. 
+
+Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end
+
+Your tools should have clear input parameters
+e.g., Path to the repository
+The command line tool should not work if input parameters are wrong
+Make *config* parameters very clear
+A config.py file where people can tune specific configs
+If you use environment variables, document them clearly
+Do not use hard coded paths
 
 During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks)
 Understand the importance of the data you are passing to your model

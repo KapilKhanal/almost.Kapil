@@ -36,9 +36,11 @@ Source: Reactive machine learning book&lt;/p&gt;
 &lt;li&gt;ML api: Flask Application to serve the model by downloading the model from PyPi/S3 and exposing a API to get the data and return the prediction&lt;/li&gt;
 &lt;li&gt;Another Flask/Front-end framework to get the json from API and populate the dashboard with plots and predictions&lt;/li&gt;&lt;/p&gt;
 
-&lt;p&gt;While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don&amp;rsquo;t human do that?
-Basic software engineering skills and gotchas:
-What packages do your application need? *** requirements.txt ***&lt;/p&gt;
+&lt;p&gt;While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don&amp;rsquo;t human do that?&lt;/p&gt;
+
+&lt;h2 id=&#34;basic-software-engineering-skills-and-gotchas&#34;&gt;Basic software engineering skills and gotchas:&lt;/h2&gt;
+
+&lt;p&gt;What packages do your application need? &lt;strong&gt;&lt;em&gt;requirements.txt&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.
 Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself
@@ -49,6 +51,16 @@ Use venv (virtual environments). You don&amp;rsquo;t want conflicting libraries 
 Think of logging: what do you want to monitor? import logging in Python.
 Think of how you are going to share your final model(pickel file? parametrized formula?)
 A Docker image, ready to be used, is a good choice.&lt;/p&gt;
+
+&lt;p&gt;Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end&lt;/p&gt;
+
+&lt;p&gt;Your tools should have clear input parameters
+e.g., Path to the repository
+The command line tool should not work if input parameters are wrong
+Make &lt;em&gt;config&lt;/em&gt; parameters very clear
+A config.py file where people can tune specific configs
+If you use environment variables, document them clearly
+Do not use hard coded paths&lt;/p&gt;
 
 &lt;p&gt;During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks)
 Understand the importance of the data you are passing to your model
