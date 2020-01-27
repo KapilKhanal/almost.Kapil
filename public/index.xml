@@ -186,9 +186,9 @@ https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29&gt;Clean Code&
 
 &lt;p&gt;All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.&lt;/p&gt;
 
-&lt;p&gt;If you like to see the end product, this link will take you there &lt;a href = &#34;http://lakedashboard.team/&#34;&gt;lake Dashboard&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;References:
+&lt;p&gt;If you like to see the end product, this link will take you there &lt;a href = &#34;http://lakedashboard.team/&#34;&gt;lake Dashboard&lt;/a&gt;
+Some tips blatantly copied from ,&lt;br&gt;
+References:
 &lt;a href=&#34;http://gousios.org/courses/ml4se/building-your-ml-pipeline.html&#34; target=&#34;_blank&#34;&gt;http://gousios.org/courses/ml4se/building-your-ml-pipeline.html&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
