@@ -5,75 +5,12 @@
     <link>/categories/applied-statistics/</link>
       <atom:link href="/categories/applied-statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Applied Statistics</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Sun, 21 Aug 2016 21:13:14 -0500</lastBuildDate>
     <image>
       <url>/img/aph-salt-spring-zoom.jpg</url>
       <title>Applied Statistics</title>
       <link>/categories/applied-statistics/</link>
     </image>
-    
-    <item>
-      <title>Minnesota Lake Project</title>
-      <link>/post/minnesota-lake-project/</link>
-      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/post/minnesota-lake-project/</guid>
-      <description>
-
-&lt;h2 id=&#34;so-you-have-a-good-model-want-to-actually-use-it&#34;&gt;So you have a good model? Want to actually use it?&lt;/h2&gt;
-
-&lt;h5 id=&#34;prototype-grade-model-workflow-to-production-land-workflow&#34;&gt;Prototype grade model workflow to Production land workflow&lt;/h5&gt;
-
-&lt;p&gt;Making a good model is awesome. It does takes enormous amount of experimentation and research but once we have model, that is an eureka moment. But to actually use the model in production is a whole another pain. Recently I have been learning ways to deploy models.&lt;br /&gt;
-&lt;img src=&#34;/post/2020-01-19-minnesota-lake-project_files/mlsystem.jpg&#34; alt=&#34;Source:Manning Reactive Machine learning book&#34; /&gt;
-Source: Reactive machine learning book&lt;/p&gt;
-
-&lt;h4 id=&#34;model-predictions-as-webservice&#34;&gt;Model Predictions as WebService&lt;/h4&gt;
-
-&lt;p&gt;Now,as we can see it is a lifecycle. There is a lot of nuances on deploying models. The workflow has to be reproducible,elastic and easy to manage. If you end up changing the model, the infrastructure should not have to be changed. For example, I used a simple regression model for this project, now if i am training random forest model, the parts that needs to be changed should be easily changed that is i collect all the parameters and file locations, data locations on on file say &lt;strong&gt;&lt;em&gt;config&lt;/em&gt;&lt;/strong&gt; file then that will not be changed.Similarly, if i separate the feature engineering, feature selection part , data validation etc on their own separate files then it will be easy to deploy. I can always train two different model and put it in the python package or cloud location like Pypi,S3 etc then i can easily retrieve those models and use it in the flask API i design just to serve the model.&lt;/p&gt;
-
-&lt;p&gt;Thinking each service as a different code repoisitory. We will have three different repos.
-&lt;li&gt;Python package for retrieving data, training model and uploading final model to PyPi,or S3&lt;/li&gt;
-&lt;li&gt;ML api: Flask Application to serve the model by downloading the model from PyPi/S3 and exposing a API to get the data and return the prediction&lt;/li&gt;
-&lt;li&gt;Another Flask/Front-end framework to get the json from API and populate the dashboard with plots and predictions&lt;/li&gt;&lt;/p&gt;
-
-&lt;p&gt;While learning about this, I came across the idea of DataOps and MLOps. I think in future, most softwares will be ML softwares doing real time prediction and inference with very little slowdown. Wait, don&amp;rsquo;t human do that?&lt;/p&gt;
-
-&lt;h2 id=&#34;basic-software-engineering-skills-and-gotchas&#34;&gt;Basic software engineering skills and gotchas:&lt;/h2&gt;
-
-&lt;p&gt;What packages do your application need? &lt;strong&gt;&lt;em&gt;requirements.txt&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.&lt;br&gt;
-Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself &lt;br&gt;
-Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. &lt;br&gt;
-Use venv (virtual environments). You don&amp;rsquo;t want conflicting libraries quarelling with each other.&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;set.seed() while training, to increase reproducibility.Use the same seed across different models.
-Think of logging: what do you want to monitor? import logging in Python. &lt;br&gt;
-Think of how you are going to share your final model(pickel file? parametrized formula?) &lt;br&gt;
-A Docker image, ready to be used, is a good choice. &lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end
-&lt;br&gt;
-Your tools should have clear input parameters
-e.g., Path to the repository &lt;br&gt;
-The command line tool should not work if input parameters are wrong &lt;br&gt;
-Make &lt;em&gt;config&lt;/em&gt; parameters very clear &lt;br&gt;
-A config.py file where people can tune specific configs &lt;br&gt;
-If you use environment variables, document them clearly &lt;br&gt;
-Do not use hard coded paths &lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks) &lt;br&gt;
-Understand the importance of the data you are passing to your model &lt;br&gt;
-Pay attention to “garbage-in garbage-out” &lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.&lt;/p&gt;
-
-&lt;p&gt;If you like to see the end product, this link will take you there &lt;a href = &#34;http://lakedashboard.team/&#34;&gt;lake Dashboard&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;References:
-&lt;a href=&#34;http://gousios.org/courses/ml4se/building-your-ml-pipeline.html&#34; target=&#34;_blank&#34;&gt;http://gousios.org/courses/ml4se/building-your-ml-pipeline.html&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Fake Data, Valid Models , Better Understanding</title>

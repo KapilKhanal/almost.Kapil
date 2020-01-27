@@ -13,14 +13,6 @@
     </image>
     
     <item>
-      <title>Applied Statistics</title>
-      <link>/categories/applied-statistics/</link>
-      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/categories/applied-statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Dashboard</title>
       <link>/categories/dashboard/</link>
       <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
@@ -33,6 +25,14 @@
       <link>/categories/model-deplyoment/</link>
       <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/categories/model-deplyoment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software engineering skills</title>
+      <link>/categories/software-engineering-skills/</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/software-engineering-skills/</guid>
       <description></description>
     </item>
     
@@ -81,6 +81,14 @@
       <link>/categories/dplyr/</link>
       <pubDate>Sat, 23 Jun 2018 21:13:14 -0500</pubDate>
       <guid>/categories/dplyr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Applied Statistics</title>
+      <link>/categories/applied-statistics/</link>
+      <pubDate>Sun, 21 Aug 2016 21:13:14 -0500</pubDate>
+      <guid>/categories/applied-statistics/</guid>
       <description></description>
     </item>
     

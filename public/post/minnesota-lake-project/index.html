@@ -424,7 +424,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/dashboard/">Dashboard</a>, <a href="/categories/model-deplyoment/">Model Deplyoment</a>, <a href="/categories/applied-statistics/">Applied Statistics</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/dashboard/">Dashboard</a>, <a href="/categories/model-deplyoment/">Model Deplyoment</a>, <a href="/categories/software-engineering-skills/">Software engineering skills</a></span>
   
 
   
@@ -543,11 +543,17 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h2 id="so-you-have-a-good-model-want-to-actually-use-it">So you have a good model? Want to actually use it?</h2>
+<h2 id="so-you-have-a-good-model-want-to-make-it-available-to-serve-the-world">So you have a good model? Want to make it available to serve the world?</h2>
 
-<h5 id="prototype-grade-model-workflow-to-production-land-workflow">Prototype grade model workflow to Production land workflow</h5>
+<h5 id="prototype-grade-model-workflow-to-production-land-workflow">Prototype-grade model workflow to Production land workflow</h5>
 
-<p>Making a good model is awesome. It does takes enormous amount of experimentation and research but once we have model, that is an eureka moment. But to actually use the model in production is a whole another pain. Recently I have been learning ways to deploy models.<br />
+<p>Making a good model is awesome. It does takes enormous amount of experimentation and research. When we have a decent model, that is an eureka moment.</p>
+
+<blockquote>
+<p>Every model wants to go out in the real world and serve its purpose.</p>
+</blockquote>
+
+<p>But to actually use the model in production is a whole another pain. Recently I have been learning ways to deploy models.<br />
 <img src="/post/2020-01-19-minnesota-lake-project_files/mlsystem.jpg" alt="Source:Manning Reactive Machine learning book" />
 Source: Reactive machine learning book</p>
 
@@ -566,29 +572,48 @@ Source: Reactive machine learning book</p>
 
 <p>What packages do your application need? <strong><em>requirements.txt</em></strong></p>
 
-<p>Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.<br>
-Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself <br>
-Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. <br>
-Use venv (virtual environments). You don&rsquo;t want conflicting libraries quarelling with each other.<br></p>
+<ul>
+<li>Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.<br></li>
+<li>Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself <br></li>
+<li>Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. <br></li>
 
-<p>set.seed() while training, to increase reproducibility.Use the same seed across different models.
-Think of logging: what do you want to monitor? import logging in Python. <br>
-Think of how you are going to share your final model(pickel file? parametrized formula?) <br>
-A Docker image, ready to be used, is a good choice. <br></p>
+<li><p>Use venv (virtual environments). You don&rsquo;t want conflicting libraries quarelling with each other.<br></p></li>
 
-<p>Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end
-<br>
-Your tools should have clear input parameters
-e.g., Path to the repository <br>
-The command line tool should not work if input parameters are wrong <br>
-Make <em>config</em> parameters very clear <br>
-A config.py file where people can tune specific configs <br>
-If you use environment variables, document them clearly <br>
-Do not use hard coded paths <br></p>
+<li><p>set.seed() while training, to increase reproducibility.Use the same seed across different models.</p></li>
 
-<p>During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks) <br>
-Understand the importance of the data you are passing to your model <br>
-Pay attention to “garbage-in garbage-out” <br></p>
+<li><p>Think of logging: what do you want to monitor? import logging in Python. <br></p></li>
+
+<li><p>Think of how you are going to share your final model(pickel file? parametrized formula?) <br></p></li>
+
+<li><p>A Docker image, ready to be used, is a good choice. <br></p></li>
+
+<li><p>Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end
+<br></p></li>
+
+<li><p>Your tools should have clear input parameters
+e.g., Path to the repository <br></p></li>
+
+<li><p>The command line tool should not work if input parameters are wrong <br></p></li>
+
+<li><p>Make <em>config</em> parameters very clear <br></p></li>
+
+<li><p>A config.py file where people can tune specific configs <br></p></li>
+
+<li><p>If you use environment variables, document them clearly <br></p></li>
+
+<li><p>Do not use hard coded paths <br></p></li>
+
+<li><p>During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks) <br>
+Understand the importance of the data you are passing to your model <br></p></li>
+
+<li><p>Pay attention to “garbage-in garbage-out” <br></p></li>
+</ul>
+
+<blockquote>
+<p>If you would prefer more indepth resource on software skills: I found this summary notes of the famous book:
+<a href =
+https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29>Clean Code</a></p>
+</blockquote>
 
 <p>All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.</p>
 

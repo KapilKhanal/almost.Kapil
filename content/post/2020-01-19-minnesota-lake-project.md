@@ -6,7 +6,7 @@ slug: minnesota-lake-project
 categories:
   - Dashboard
   - Model Deplyoment
-  - Applied Statistics
+  - Software engineering skills
 tags: []
 subtitle: 'Designing and deploying machine learning models'
 summary: 'A practice on good software engineering principles on deploying ml model as RestAPI'
@@ -19,10 +19,14 @@ image:
   preview_only: no
 projects: []
 ---
-## So you have a good model? Want to actually use it?
-##### Prototype grade model workflow to Production land workflow
+## So you have a good model? Want to make it available to serve the world?
+##### Prototype-grade model workflow to Production land workflow
 
-Making a good model is awesome. It does takes enormous amount of experimentation and research but once we have model, that is an eureka moment. But to actually use the model in production is a whole another pain. Recently I have been learning ways to deploy models.  
+Making a good model is awesome. It does takes enormous amount of experimentation and research. When we have a decent model, that is an eureka moment. 
+
+> Every model wants to go out in the real world and serve its purpose.
+
+But to actually use the model in production is a whole another pain. Recently I have been learning ways to deploy models.  
 ![Source:Manning Reactive Machine learning book](/post/2020-01-19-minnesota-lake-project_files/mlsystem.jpg)
 Source: Reactive machine learning book
 #### Model Predictions as WebService
@@ -37,30 +41,33 @@ While learning about this, I came across the idea of DataOps and MLOps. I think 
 ## Basic software engineering skills and gotchas:
 What packages do your application need? ***requirements.txt***
 
-Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.<br>
-Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself <br>
-Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. <br>
-Use venv (virtual environments). You don't want conflicting libraries quarelling with each other.<br>
+* Right data types and schema for your data/database. Why making all of them StringType() is not a wise move in database.<br>
+* Do you really need all those dataframe in memory?  Remove or avoid storing intermediate dataframes. If possible do all the column operations in database itself <br>
+* Always use Git and version your code (and your data(Data Version Control)) in the right way.The simplest way is to store all the data used in prediction in a database with the model version and predicted value. <br>
+* Use venv (virtual environments). You don't want conflicting libraries quarelling with each other.<br>
 
-set.seed() while training, to increase reproducibility.Use the same seed across different models.
-Think of logging: what do you want to monitor? import logging in Python. <br>
-Think of how you are going to share your final model(pickel file? parametrized formula?) <br>
-A Docker image, ready to be used, is a good choice. <br>
+* set.seed() while training, to increase reproducibility.Use the same seed across different models.
+* Think of logging: what do you want to monitor? import logging in Python. <br>
+* Think of how you are going to share your final model(pickel file? parametrized formula?) <br>
+* A Docker image, ready to be used, is a good choice. <br>
 
-Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end
+* Separate the data collection tool from the ML pipeline. Different repository for data wrangling, ML training and dashboard/front-end
 <br>
-Your tools should have clear input parameters 
+* Your tools should have clear input parameters 
 e.g., Path to the repository <br>
-The command line tool should not work if input parameters are wrong <br>
-Make *config* parameters very clear <br>
-A config.py file where people can tune specific configs <br>
-If you use environment variables, document them clearly <br>
-Do not use hard coded paths <br>
+* The command line tool should not work if input parameters are wrong <br>
+* Make *config* parameters very clear <br>
+* A config.py file where people can tune specific configs <br>
+* If you use environment variables, document them clearly <br>
+* Do not use hard coded paths <br>
 
-During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks) <br>
+* During development, consider storing intermediate steps.(Rmarkdown or Jupyter notebooks) <br>
 Understand the importance of the data you are passing to your model <br>
-Pay attention to “garbage-in garbage-out” <br>
+* Pay attention to “garbage-in garbage-out” <br>
 
+> If you would prefer more indepth resource on software skills: I found this summary notes of the famous book: 
+<a href =
+https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29>Clean Code</a>
 
 All these different services are extensive on their own. Without a dedicated team, these services will not succeed. But this exercise was to get a general understanding of the overall ecosystem of Data and ML system. To be a good data scientist, i think it is good to get a lay of the land.
 
