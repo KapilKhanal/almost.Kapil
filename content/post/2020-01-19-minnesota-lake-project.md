@@ -73,8 +73,9 @@ All these different services are extensive on their own. Without a dedicated tea
 
 
 
-If you like to see the end product, this link will take you there <a href = "http://lakedashboard.team/">lake Dashboard</a>
-Some tips blatantly copied from ,<br>
+If you like to see the end product, this link will take you there <a href = "http://lakedashboard.team/">lake Dashboard</a> <br>
+
+Some tips **blatantly copied**  from ,<br>
 References:
 http://gousios.org/courses/ml4se/building-your-ml-pipeline.html
 
