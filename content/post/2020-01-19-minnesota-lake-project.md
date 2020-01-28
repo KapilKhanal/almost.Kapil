@@ -1,5 +1,5 @@
 ---
-title: Minnesota Lake Project
+title: Minnesota Lake Project:ML in Production Exercise
 author: Kapil Khanal, Daniel Lew
 date: '2020-01-19'
 slug: minnesota-lake-project
@@ -8,8 +8,8 @@ categories:
   - Model Deplyoment
   - Software engineering skills
 tags: []
-subtitle: 'Designing and deploying machine learning models'
-summary: 'A practice on good software engineering principles on deploying ml model as RestAPI'
+subtitle: 'Deploying machine learning models'
+summary: 'A learning exercise and practice on good software engineering principles on deploying ml model as RestAPI'
 authors: []
 lastmod: '2020-01-19T16:54:49-06:00'
 featured: yes
@@ -30,7 +30,10 @@ But to actually use the model in production is a whole another pain. Recently I 
 ![Source:Manning Reactive Machine learning book](/post/2020-01-19-minnesota-lake-project_files/mlsystem.jpg)
 Source: Reactive machine learning book
 #### Model Predictions as WebService
-Now,as we can see it is a lifecycle. There is a lot of nuances on deploying models. The workflow has to be reproducible,elastic and easy to manage. If you end up changing the model, the infrastructure should not have to be changed. For example, I used a simple regression model for this project, now if i am training random forest model, the parts that needs to be changed should be easily changed that is i collect all the parameters and file locations, data locations on on file say ***config*** file then that will not be changed.Similarly, if i separate the feature engineering, feature selection part , data validation etc on their own separate files then it will be easy to deploy. I can always train two different model and put it in the python package or cloud location like Pypi,S3 etc then i can easily retrieve those models and use it in the flask API i design just to serve the model.
+Now,as we can see it is a lifecycle. There is a lot of nuances on deploying models. The workflow has to be reproducible,elastic and easy to manage. If you end up changing the model, the infrastructure should not have to be changed. For example, I used a simple regression model for this project, now if i am training random forest model, the parts that needs to be changed should be easily changed without change in infrastructure,  that is I collect all the parameters and file locations, data locations on on file say ***config*** file.Similarly, if I separate the feature engineering, feature selection part ,data validation etc on their own separate files then it will be easy to deploy[[**Modular code**]].
+<br>
+
+I can always train two different model and put it in the python package or cloud location like Pypi,S3 etc then i can easily retrieve those models and use it in the flask API i design just to serve the model.
 
 Thinking each service as a different code repoisitory. We will have three different repos. 
 <li>Python package for retrieving data, training model and uploading final model to PyPi,or S3</li>

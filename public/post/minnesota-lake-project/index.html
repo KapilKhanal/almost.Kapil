@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="A practice on good software engineering principles on deploying ml model as RestAPI">
+  <meta name="description" content="A learning exercise and practice on good software engineering principles on deploying ml model as RestAPI">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/minnesota-lake-project/">
@@ -125,8 +125,8 @@
   
   <meta property="og:site_name" content="𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛">
   <meta property="og:url" content="/post/minnesota-lake-project/">
-  <meta property="og:title" content="Minnesota Lake Project | 𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛">
-  <meta property="og:description" content="A practice on good software engineering principles on deploying ml model as RestAPI"><meta property="og:image" content="/img/aph-salt-spring-zoom.jpg">
+  <meta property="og:title" content="Minnesota Lake Project:ML in Production Exercise | 𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛">
+  <meta property="og:description" content="A learning exercise and practice on good software engineering principles on deploying ml model as RestAPI"><meta property="og:image" content="/img/aph-salt-spring-zoom.jpg">
   <meta property="twitter:image" content="/img/aph-salt-spring-zoom.jpg"><meta property="og:locale" content="en-us">
   
     
@@ -144,7 +144,7 @@
 
 
 
-  <title>Minnesota Lake Project | 𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛</title>
+  <title>Minnesota Lake Project:ML in Production Exercise | 𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛</title>
 
 </head>
 
@@ -373,10 +373,10 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Minnesota Lake Project</h1>
+  <h1 itemprop="name">Minnesota Lake Project:ML in Production Exercise</h1>
 
   
-  <p class="page-subtitle">Designing and deploying machine learning models</p>
+  <p class="page-subtitle">Deploying machine learning models</p>
   
 
   
@@ -440,7 +440,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/minnesota-lake-project/&amp;text=Minnesota%20Lake%20Project" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/minnesota-lake-project/&amp;text=Minnesota%20Lake%20Project:ML%20in%20Production%20Exercise" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -453,7 +453,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/minnesota-lake-project/&amp;t=Minnesota%20Lake%20Project" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/minnesota-lake-project/&amp;t=Minnesota%20Lake%20Project:ML%20in%20Production%20Exercise" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -466,7 +466,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Minnesota%20Lake%20Project&amp;body=/post/minnesota-lake-project/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Minnesota%20Lake%20Project:ML%20in%20Production%20Exercise&amp;body=/post/minnesota-lake-project/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -479,7 +479,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/minnesota-lake-project/&amp;title=Minnesota%20Lake%20Project" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/minnesota-lake-project/&amp;title=Minnesota%20Lake%20Project:ML%20in%20Production%20Exercise" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -492,7 +492,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Minnesota%20Lake%20Project%20/post/minnesota-lake-project/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Minnesota%20Lake%20Project:ML%20in%20Production%20Exercise%20/post/minnesota-lake-project/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -505,7 +505,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/minnesota-lake-project/&amp;title=Minnesota%20Lake%20Project" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/minnesota-lake-project/&amp;title=Minnesota%20Lake%20Project:ML%20in%20Production%20Exercise" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -559,7 +559,10 @@ Source: Reactive machine learning book</p>
 
 <h4 id="model-predictions-as-webservice">Model Predictions as WebService</h4>
 
-<p>Now,as we can see it is a lifecycle. There is a lot of nuances on deploying models. The workflow has to be reproducible,elastic and easy to manage. If you end up changing the model, the infrastructure should not have to be changed. For example, I used a simple regression model for this project, now if i am training random forest model, the parts that needs to be changed should be easily changed that is i collect all the parameters and file locations, data locations on on file say <strong><em>config</em></strong> file then that will not be changed.Similarly, if i separate the feature engineering, feature selection part , data validation etc on their own separate files then it will be easy to deploy. I can always train two different model and put it in the python package or cloud location like Pypi,S3 etc then i can easily retrieve those models and use it in the flask API i design just to serve the model.</p>
+<p>Now,as we can see it is a lifecycle. There is a lot of nuances on deploying models. The workflow has to be reproducible,elastic and easy to manage. If you end up changing the model, the infrastructure should not have to be changed. For example, I used a simple regression model for this project, now if i am training random forest model, the parts that needs to be changed should be easily changed without change in infrastructure,  that is I collect all the parameters and file locations, data locations on on file say <strong><em>config</em></strong> file.Similarly, if I separate the feature engineering, feature selection part ,data validation etc on their own separate files then it will be easy to deploy[[<strong>Modular code</strong>]].
+<br></p>
+
+<p>I can always train two different model and put it in the python package or cloud location like Pypi,S3 etc then i can easily retrieve those models and use it in the flask API i design just to serve the model.</p>
 
 <p>Thinking each service as a different code repoisitory. We will have three different repos.
 <li>Python package for retrieving data, training model and uploading final model to PyPi,or S3</li>
