@@ -53,8 +53,5 @@ Also, I am looking for opportunities related to Data science , Machine learning 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hi twitter network, I’m looking for a full time opportunity in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>. <a href="https://twitter.com/hashtag/Analytics?src=hash&amp;ref_src=twsrc%5Etfw">#Analytics</a>. I’d love to hear about any open opportunities that you or anyone in your network might know of. I’d appreciate your any guidance,<br>Thank you,<br>Here is my portfolio : <a href="https://t.co/q6WwnepBCJ">https://t.co/q6WwnepBCJ</a></p>&mdash; Kapil.Khanal (@almost_kapil) <a href="https://twitter.com/almost_kapil/status/1217933543558598662?ref_src=twsrc%5Etfw">January 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<script async data-uid="8bc082d9f0" src="https://prodigious-builder-5115.ck.page/8bc082d9f0/index.js"></script>
-
-
 
 

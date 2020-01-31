@@ -45,7 +45,7 @@ subtitle = "Learning one concept at a time"
   #   Any HTML color name or Hex value is valid.
   
   # Background color.
-  #color = "coffee"
+  color = "coffee"
   
   # Background gradient.
    #gradient_start = "DeepSkyBlue"
