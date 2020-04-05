@@ -18,9 +18,10 @@
   weight = 40
 
 [[main]]
-  name = "Schedule"
-  url = "files/Schedule.png"
+  name = "Projects"
+  url = "#projects"
   weight = 50
+
 
 
 

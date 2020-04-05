@@ -39,11 +39,10 @@ date_format = "Jan 2006"
   date_end = "2019-08-02"
   description = "Worked with Faculty and Phd Students on applying different Mathematical and Statistical Models to Sports Data."
   
-  [[item]]
-  organization = "American Statistical Association"
-  organization_url = "https://thisisstatistics.org/police-data-challenge-winner-recommendation/"
-  title = "<b><span style="color:blue">Best Overall Analysis among College Students</span></b>"
-  url = ""
+[[item]]
+  organization = "American Statistical Association" 
+  title = "Best Overall Analysis among College Students"
+  url = "https://thisisstatistics.org/police-data-challenge-winner-recommendation/"
   date_start = "2017-09-03"
   date_end = "2018-02-02"
   description = "The **Police Data Challenge** contest brought talented high school and undergraduate students across the nation to show their passion for the good statistics can do.With the Police Foundation’s efforts to make the information available, the 70 teams used real crime data sets from Baltimore, Seattle and Cincinnati police departments to analyze the best possible solutions for safer communities"

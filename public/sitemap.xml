@@ -33,6 +33,16 @@
   </url>
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2020-03-30T12:17:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/sales-impact-analysis-with-clustering-and-b/</loc>
+    <lastmod>2020-03-30T12:17:04-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2020-01-19T16:54:49-06:00</lastmod>
   </url>
@@ -53,11 +63,6 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2020-01-19T16:54:49-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/software-engineering-skills/</loc>
     <lastmod>2020-01-19T16:54:49-06:00</lastmod>
   </url>
@@ -70,6 +75,26 @@
   <url>
     <loc>/categories/public-policy/</loc>
     <lastmod>2019-12-27T18:26:15-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-products/</loc>
+    <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/educational/</loc>
+    <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-10-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -98,12 +123,12 @@
   </url>
   
   <url>
-    <loc>/categories/ggplot2/</loc>
+    <loc>/tags/ggplot2/</loc>
     <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ggplot2/</loc>
+    <loc>/categories/ggplot2/</loc>
     <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
@@ -119,11 +144,6 @@
   
   <url>
     <loc>/categories/tableau/</loc>
-    <lastmod>2019-08-21T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-08-21T21:13:14-05:00</lastmod>
   </url>
   
@@ -328,27 +348,12 @@
   </url>
   
   <url>
-    <loc>/tags/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/demo/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
+    <loc>/project/research/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   

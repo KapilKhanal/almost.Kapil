@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Products | 𝚃𝚛𝚊𝚗𝚜𝚙𝚘𝚗𝚜𝚝𝚎𝚛</title>
+    <link>/tags/data-products/</link>
+      <atom:link href="/tags/data-products/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data Products</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2018 Kapil Khanal</copyright><lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/aph-salt-spring-zoom.jpg</url>
+      <title>Data Products</title>
+      <link>/tags/data-products/</link>
+    </image>
+    
+    <item>
+      <title>Minnesota Lake Project</title>
+      <link>/project/educational/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/project/educational/</guid>
+      <description>&lt;p&gt;This dataset contains lake quality in each lake and year.&lt;/p&gt;
+
+&lt;p&gt;MCES data
+The ** MCES Citizen-Assisted-Monitoring-Program(CAMP)&lt;/p&gt;
+
+&lt;p&gt;The goal of the MCES lake monitoring program is to obtain and provide information that enables cities, counties, lake associations, and watershed management districts to better manage TCMA lakes, thereby protecting and improving lake water quality.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
